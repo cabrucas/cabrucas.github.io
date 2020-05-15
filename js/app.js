@@ -17,10 +17,10 @@ sal({
 
 // плавный скролл
 SmoothScroll({
-    animationTime    : 1000, // [ms]
+    animationTime    : 400, // [ms]
     stepSize         : 100, // [px]
-    accelerationDelta : 20,  // 50
-    accelerationMax   : 2,   // 3
+    accelerationDelta : 50,  // 50
+    accelerationMax   : 3,   // 3
     keyboardSupport   : true,  // option
     arrowScroll       : 50,    // [px]
     pulseAlgorithm   : true,
@@ -39,3 +39,22 @@ var rellax = new Rellax('.rellax', {
     vertical: true,
     horizontal: false
   });
+
+// инпуты
+
+var regions = new Choices(document.getElementById('region-select'), {
+    renderChoiceLimit: 5,
+    noResultsText: 'Ничего не найдено',
+    noChoicesText: 'Ничего нет',
+    itemSelectText: '',
+    shouldSort: true,
+    shouldSortItems: true,
+});
+var cities = new Choices(document.getElementById('city-select'), {
+    renderChoiceLimit: 5,
+    noResultsText: 'Ничего не найдено',
+    noChoicesText: 'Ничего нет',
+    itemSelectText: '',
+    shouldSort: true,
+    shouldSortItems: true,
+});
