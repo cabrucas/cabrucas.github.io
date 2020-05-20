@@ -2,6 +2,7 @@
 <html lang="ru-Ru">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>Mirogroup Главная</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;family=Jura:wght@300;700&amp;display=swap">
     <link rel="stylesheet" href="css/normalize.css">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="css/media.css">
   </head>
   <body>
+    <!--регионы-->
     <header>
       <div class="menu-container">
         <div class="menu-wrapper"><a class="logo-link" href="index.html">
@@ -21,10 +23,10 @@
             <div class="burger__menu"></div>
           </button>
           <ul class="nav">
-            <li class="nav__item"><a class="nav__link nav__link--active" href="#">Прайс-лист</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Поставщикам</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--active" href="price.html">Прайс-лист</a></li>
+            <li class="nav__item"><a class="nav__link" href="partners.html">Поставщикам</a></li>
             <li class="nav__item"><a class="nav__link" href="#">Авансирование</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">О компании</a></li>
+            <li class="nav__item"><a class="nav__link" href="about.html">О компании</a></li>
             <li class="nav__item"><a class="nav__link" href="#">Вакансии</a></li>
             <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
           </ul>
@@ -134,25 +136,25 @@
               <source media="(max-width: 1920px)" srcset="img/decor-2-small.webp" loading="lazy"><img class="services__image" src="img/decor-2-small.jpg" loading="lazy">
             </picture>
           </div>
-          <div class="service-set"><a class="card" href="#" data-sal="slide-up" data-sal-duration="1500">
-              <picture class="card__illustration">
-                <source media="(max-width: 1920px)" srcset="img/decor-1-small.webp" loading="lazy"><img src="img/decor-1-small.png" loading="lazy">
-              </picture>
-              <article class="card__info">
-                <object class="card__back-image" data="img/illustrations/card-back.svg" type="image/svg+xml"><img src="img/illustrations/card-back.svg" alt=""></object>
-                <p class="card__pretext">Регистрация</p>
-                <p class="card__header">Стать поставщиком</p>
-                <div class="card__plus"></div>
-              </article></a><a class="card" href="#" data-sal="slide-up" data-sal-duration="1000">
-              <picture class="card__illustration">
-                <source media="(max-width: 1920px)" srcset="img/decor-3-small.webp" loading="lazy"><img src="img/decor-3-small.png" loading="lazy">
-              </picture>
-              <article class="card__info">
-                <object class="card__back-image" data="img/illustrations/card-back.svg" type="image/svg+xml"><img src="img/illustrations/card-back.svg" alt=""></object>
-                <p class="card__pretext">Узнать больше</p>
-                <p class="card__header">Получить консультацию</p>
-                <div class="card__plus"></div>
-              </article></a></div>
+              <div class="service-set"><a class="card" href="#" data-sal="slide-up" data-sal-duration="1500">
+                  <picture class="card__illustration">
+                    <source media="(max-width: 1920px)" srcset="img/decor-1-small.webp"><img src="img/decor-1-small.jpg" loading="lazy">
+                  </picture>
+                  <article class="card__info">
+                    <object class="card__back-image" data="img/illustrations/card-back.svg" type="image/svg+xml"><img src="img/illustrations/card-back.svg" alt=""></object>
+                    <p class="card__pretext">Регистрация</p>
+                    <p class="card__header">Стать поставщиком</p>
+                    <div class="card__plus"></div>
+                  </article></a><a class="card" href="#" data-sal="slide-up" data-sal-duration="1000">
+                  <picture class="card__illustration">
+                    <source media="(max-width: 1920px)" srcset="img/decor-3-small.webp"><img src="img/decor-3-small.png" loading="lazy">
+                  </picture>
+                  <article class="card__info">
+                    <object class="card__back-image" data="img/illustrations/card-back.svg" type="image/svg+xml"><img src="img/illustrations/card-back.svg" alt=""></object>
+                    <p class="card__pretext">Узнать больше</p>
+                    <p class="card__header">Получить консультацию</p>
+                    <div class="card__plus"></div>
+                  </article></a></div>
         </div>
       </div>
     </section>
@@ -178,8 +180,8 @@
           <div class="footer__menu">
             <div class="footer__links">
               <ul class="footer__links-a">
-                <li><a href="#">Прайс-лист</a></li>
-                <li><a href="#">Поставщикам</a></li>
+                <li><a href="price.html">Прайс-лист</a></li>
+                <li><a href="partners.html">Поставщикам</a></li>
                 <li><a href="#">Авансирование</a></li>
               </ul>
               <ul class="footer__links-b">
@@ -213,8 +215,8 @@
     </footer>
     <script src="js/swiper.min.js"></script>
     <script src="js/sal.js"></script>
-    <script src="js/SmoothScroll.min.js"></script>
     <script src="js/rellax.min.js"></script>
+    <script src="js/SmoothScroll.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

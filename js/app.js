@@ -1,14 +1,36 @@
-//main slider init
-var mySwiper = new Swiper ('.mainpage-slider', {
+// слайдер главной страницы
+const mainExists = document.getElementsByClassName('mainpage-slider') || [];
+if (mainExists.length > 0) {
+    var mySwiper = new Swiper ('.mainpage-slider', {
+        direction: 'horizontal',
+        speed: 1500,
+        loop: true,
+        effect: 'fade',
+        autoplay: {
+            delay: 1500,
+        },
+        disableOnInteraction: false,
+    });
+};
+
+// слайдер схемы работы на странице партнеров
+const schemeExists = document.getElementsByClassName('scheme-slider') || [];
+if(schemeExists.length > 0) {
+  var schemeSlider = new Swiper ('.scheme-slider', {
     direction: 'horizontal',
-    speed: 1500,
+    speed: 700,
     loop: true,
-    effect: 'fade',
-    autoplay: {
-        delay: 1500,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-    disableOnInteraction: false,
-})
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+    },
+});
+}
+
 // анимации при скролле
 sal({
     threshold: 0.01,
@@ -31,30 +53,41 @@ SmoothScroll({
     fixedBackground   : true, 
     excluded          : ''    
   });
+  
 // параллакс 
-var rellax = new Rellax('.rellax', {
-    center: true,
-    wrapper: null,
-    round: true,
-    vertical: true,
-    horizontal: false
+function ParallaxMovement() {
+    const rellax = new Rellax('.rellax', {
+        center: true,
+        wrapper: null,
+        round: true,
+        vertical: true,
+        horizontal: false
+      });
+}
+
+ParallaxMovement();
+
+// инпуты прайс-листа
+let regions = document.getElementById('region-select') || [];
+if (regions.length > 0) {
+    regions = new Choices(document.getElementById('region-select'), {
+      renderChoiceLimit: 5,
+      noResultsText: 'Ничего не найдено',
+      noChoicesText: 'Ничего нет',
+      itemSelectText: '',
+      shouldSort: true,
+      shouldSortItems: true,
+    });
+}
+
+let cities = document.getElementById('city-select') || [];
+if(cities.length > 0) {
+  cities = new Choices(document.getElementById('city-select'), {
+    renderChoiceLimit: 5,
+    noResultsText: 'Ничего не найдено',
+    noChoicesText: 'Ничего нет',
+    itemSelectText: '',
+    shouldSort: true,
+    shouldSortItems: true,
   });
-
-// инпуты
-
-var regions = new Choices(document.getElementById('region-select'), {
-    renderChoiceLimit: 5,
-    noResultsText: 'Ничего не найдено',
-    noChoicesText: 'Ничего нет',
-    itemSelectText: '',
-    shouldSort: true,
-    shouldSortItems: true,
-});
-var cities = new Choices(document.getElementById('city-select'), {
-    renderChoiceLimit: 5,
-    noResultsText: 'Ничего не найдено',
-    noChoicesText: 'Ничего нет',
-    itemSelectText: '',
-    shouldSort: true,
-    shouldSortItems: true,
-});
+}
