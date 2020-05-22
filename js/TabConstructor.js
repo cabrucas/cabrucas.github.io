@@ -2,8 +2,8 @@ var tab; // заголовок вкладки
     var tabContent; // блок содержащий контент вкладки
  
     window.onload=function() {
-        tabContent=document.getElementsByClassName('tabContent');
-        tab=document.getElementsByClassName('tab');
+        tabContent=document.getElementsByClassName('tabContent') || [];
+        tab=document.getElementsByClassName('tab')  || [];
         hideTabsContent(1);
     }
 
@@ -15,16 +15,20 @@ var tab; // заголовок вкладки
         }
     }
 
-    document.getElementById('tabs').onclick= function (event) {
-        var target=event.target;
-        if (target.className=='tab') {
-                for (var i=0; i<tab.length; i++) {
-                    if (target == tab[i]) {
-                        showTabsContent(i);
-                        break;
+    let tabsPrice = document.getElementById('tabs') || false;
+    if(tabsPrice) {
+        tabsPrice.onclick = function (event) {
+            var target=event.target;
+            if (target.className=='tab') {
+                    for (var i=0; i<tab.length; i++) {
+                        if (target == tab[i]) {
+                            showTabsContent(i);
+                            break;
+                    }
                 }
             }
         }
+
     }
 
     function showTabsContent(b){
