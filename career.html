@@ -19,8 +19,8 @@
             <picture class="logo-wrapper">
               <source media="(max-width: 1920px)" srcset="img/logo.webp"><img class="logo-mrg" src="img/logo.png" alt="Логотип Мирогрупп">
             </picture></a>
-          <div class="burger">
-            <div class="burger__menu"></div>
+          <div class="burger" id="burgerMenu">
+            <div class="burger__menu" id="burgerMenuStripes"></div>
           </div>
           <ul class="nav">
             <li class="nav__item"><a class="nav__link nav__link--active" href="price.html">Прайс-лист</a></li>
@@ -44,6 +44,22 @@
             </div></a></div>
       </div>
     </header>
+    <section class="dropper" id="dropperSection">
+      <div class="light" id="dropper-darkener"></div>
+      <div class="dropper__container" id="dropperPart">
+        <div class="menu-tools"><a class="menu-tools__link" href="#">
+            <div class="menu-tools__icon">   <img src="img/sprite.svg#globe" alt="Глобус"></div>
+            <div class="menu-tools__text-wrapper">
+              <p class="menu-tools__label">Switch to:</p>
+              <p class="menu-tools__text">English</p>
+            </div></a><a class="menu-tools__link" href="#">
+            <div class="menu-tools__icon">   <img src="img/sprite.svg#account" alt="Аккаунт"></div>
+            <div class="menu-tools__text-wrapper">
+              <p class="menu-tools__label">Вход и регистрация</p>
+              <p class="menu-tools__text">Личный кабинет</p>
+            </div></a></div>
+      </div>
+    </section>
     <section class="hero">
       <div class="container">
         <div class="page-header">

@@ -91,3 +91,19 @@ if(cities.length > 0) {
     shouldSortItems: true,
   });
 }
+
+// бургер
+const burgerMenu = document.getElementById('burgerMenu') || false;
+const burgerMenuStripes = document.getElementById('burgerMenuStripes') || false;
+const dropperPart = document.getElementById('dropperPart') || false;
+const dropperDarkener = document.getElementById('dropper-darkener') || false;
+const dropperSection = document.getElementById('dropperSection') || false;
+if (burgerMenu) {
+    burgerMenu.onclick = function() {
+    dropperSection.classList.toggle('clickable');
+    dropperDarkener.classList.toggle('darken');
+    burgerMenu.classList.toggle('burger--pressed')
+    burgerMenuStripes.classList.toggle('burger__menu--pressed');
+    dropperPart.classList.toggle('show');
+  }
+}
