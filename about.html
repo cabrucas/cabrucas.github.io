@@ -1,173 +1,600 @@
 <!DOCTYPE html>
-<html lang="ru-Ru">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Mirogroup О нас</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;family=Jura:wght@300;700&amp;display=swap">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/sal.css">
-    <link rel="stylesheet" href="css/choices.min.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/media.css">
-  </head>
-  <body>
-    <!--регионы-->
-    <header>
-      <div class="menu-container">
-        <div class="menu-wrapper"><a class="logo-link" href="index.html">
-            <picture class="logo-wrapper">
-              <source media="(max-width: 1920px)" srcset="img/logo.webp"><img class="logo-mrg" src="img/logo.png" alt="Логотип Мирогрупп">
-            </picture></a>
-          <div class="burger" id="burgerMenu">
-            <div class="burger__menu" id="burgerMenuStripes"></div>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <title>О компании</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper-bundle.css">
+  <link rel="stylesheet" href="css/nouislider.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <main>
+
+    <header class="header js-hide">
+      <section class="header__section header__section--upper">
+        <div class="container">
+          <div class="header__section-content-wrapper">
+            <ul class="header__upper-menu-list">
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link header__upper-menu-link--list">О компании</a>
+                <div class="header__submenu">
+                  <ul class="header__upper-submenu-list">
+                    <li class="header__upper-submenu-item">
+                      <a href="#" class="header__upper-submenu-link">Вакансии</a>
+                    </li>
+                    <li class="header__upper-submenu-item">
+                      <a href="#" class="header__upper-submenu-link">Команда</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link">Новости</a>
+              </li>
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link">Фото</a>
+              </li>
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link">Видео</a>
+              </li>
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link">Сданные проекты</a>
+              </li>
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link">Контакты</a>
+              </li>
+            </ul>
+            <div class="header__button-wrapper">
+              <button class="header-btn">
+                <span>Заказать звонок</span>
+              </button>
+            </div>
           </div>
-          <ul class="nav">
-            <li class="nav__item"><a class="nav__link nav__link--active" href="price.html">Прайс-лист</a></li>
-            <li class="nav__item"><a class="nav__link" href="partners.html">Поставщикам</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Авансирование</a></li>
-            <li class="nav__item"><a class="nav__link" href="about.html">О компании</a></li>
-            <li class="nav__item"><a class="nav__link" href="career.html">Вакансии</a></li>
-            <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+        </div>
+      </section>
+      <section class="header__section header__section--main">
+        <div class="container container--fullheight">
+          <div class="header__section-content-wrapper">
+            <div class="header__element-wrapper">
+              <object data="img/SKlogo.svg" type="image/svg+xml" class="header__logo"></object>
+              <a href="main.html" class="header__logo-link"></a>
+            </div>
+            <nav class="header__navigation-menu">
+              <ul class="header__main-menu">
+                <li class="header__main-menu-item header__main-menu-item--active"><a href="#" class="header__main-menu-link">Акции</a></li>
+                <li class="header__main-menu-item"><a href="#" class="header__main-menu-link">Новостройки</a></li>
+                <li class="header__main-menu-item"><a href="#" class="header__main-menu-link">Машиноместа</a></li>
+                <li class="header__main-menu-item"><a href="#" class="header__main-menu-link">Кладовые помещения</a></li>
+                <li class="header__main-menu-item"><a href="#" class="header__main-menu-link">Коммерция</a></li>
+              </ul>
+              <button class="header__mobile-menu" data-open="mobileMenu">
+                <span></span>
+              </button>
+            </nav>
+            <div class="header__element-wrapper header__element-wrapper--reversed">
+              <a href="tel:+78612055084" class="header__phone">+7 (861) 205-50-84</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="mob-dropper">
+      <div class="mob-dropper__darkener" data-close="true"></div>
+      <div class="mob-dropper__menu">
+        <div class="mob-dropper__inner-wrapper">
+          <ul class="mob-dropper__menu-list">
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Акции</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Новостройки</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Машиноместа</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Кладовые помещения</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Коммерция</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">О компании</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Новости</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Документы</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Фото</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Видео</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Сданные проекты</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Контакты</a></li>
           </ul>
         </div>
-        <div class="menu-tools"><a class="menu-tools__link" href="#">
-            <div class="menu-tools__icon">   <img src="img/sprite.svg#globe" alt="Глобус"></div>
-            <div class="menu-tools__text-wrapper">
-              <p class="menu-tools__label">Switch to:</p>
-              <p class="menu-tools__text">English</p>
-            </div></a><a class="menu-tools__link" href="#">
-            <div class="menu-tools__icon">   <img src="img/sprite.svg#account" alt="Аккаунт"></div>
-            <div class="menu-tools__text-wrapper">
-              <p class="menu-tools__label">Вход и регистрация</p>
-              <p class="menu-tools__text">Личный кабинет</p>
-            </div></a></div>
       </div>
-    </header>
-    <section class="dropper" id="dropperSection">
-      <div class="light" id="dropper-darkener"></div>
-      <div class="dropper__container" id="dropperPart">
-        <div class="menu-tools"><a class="menu-tools__link" href="#">
-            <div class="menu-tools__icon">   <img src="img/sprite.svg#globe" alt="Глобус"></div>
-            <div class="menu-tools__text-wrapper">
-              <p class="menu-tools__label">Switch to:</p>
-              <p class="menu-tools__text">English</p>
-            </div></a><a class="menu-tools__link" href="#">
-            <div class="menu-tools__icon">   <img src="img/sprite.svg#account" alt="Аккаунт"></div>
-            <div class="menu-tools__text-wrapper">
-              <p class="menu-tools__label">Вход и регистрация</p>
-              <p class="menu-tools__text">Личный кабинет</p>
-            </div></a></div>
+      <button class="mob-dropper__close" data-close="true">&times</button>
+
+    </section>
+    <section class="opener">
+      <picture>
+        <source srcset="img/about-opener.webp" type="image/webp">
+        <img src="img/about-opener.jpg" alt="Мама с ребенком" class="opener__illustration">
+      </picture>
+      <div class="opener__darkener"></div>
+      <div class="container container--absolute">
+        <ul class="breadcrumbs breadcrumbs--offset-top">
+          <li class="breadcrumbs__item breadcrumbs__item--white"><a href="#" class="breadcrumbs__link breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__item breadcrumbs__item--white"><a href="#" class="breadcrumbs__link breadcrumbs__link">О компании</a></li>
+        </ul>
+        <h1 class="opener__title">О компании</h1>
       </div>
     </section>
-    <section class="hero">
+    <section class="about-content">
       <div class="container">
-        <div class="page-header">
-          <div class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li><a class="breadcrumbs__item" href="#">Главная</a></li>
-              <li><a class="breadcrumbs__item breadcrumbs__inactive-item" href="#">О нас</a></li>
+        <div class="content-wrapper content-wrapper--bottom-offset">
+          <div class="content-wrapper__half">
+            <div class="text-block text-block--top-offset">
+              <p class="text-block__annotation text-block__annotation--bottom-offset">Миссия компании</p>
+              <p class="text-block__content text-block__content--bottom-offset">Если для простоты пренебречь потерями на теплопроводность, то видно, что жидкость заряжает субсветовой экситон. Объект когерентно притягивает луч. Течение среды, в согласии с традиционными представлениями, последовательно</p>
+              <p class="text-block__annotation text-block__annotation--bottom-offset">Владислав Константинопольский, <span class="text-block__annotation--block">генеральный директор СК «Семья»</span></p>
+
+              <div class="button-wrapper">
+                <a href="#" class="ghost-icon-button">
+                  <object data="img/service-icons.svg#video" type="image/svg+xml" class="ghost-icon-button__icon"></object>
+                  <span class="ghost-icon-button__text">Посмотреть видео</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="content-wrapper__half">
+            <div class="person">
+              <object data="img/assets/double-rays.svg" type="image/svg+xml" class="person__rays"></object>
+              <picture>
+                <source srcset="img/person.webp" type="image/webp">
+                <img src="img/person.png" alt="Генеральный директор СК «Семья»" class="person__portrait">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="infographic infographic--offset-top">
+      <div class="container container--fullheight">
+        <div class="content-wrapper content-wrapper--fullheight">
+          <div class="content-wrapper__3-4 content-wrapper__3-4--column">
+            <div class="infographic__inner-wrapper">
+              <p class="infographic__title">За 5 лет на Кубани мы построили более 500&nbsp000&nbspм<sup>2</sup> жилья</p>
+              <p class="infographic__annotation">100 000 м<sup>2</sup> = 1 район Краснодара</p>
+            </div>
+            <ul class="infographic__info-list">
+              <li class="infographic__item">
+                <p class="infographic__item-title">Топ-10</p>
+                <p class="infographic__item-annotation">Застройщиков Краснодарского края</p>
+              </li>
+              <li class="infographic__item">
+                <p class="infographic__item-title">300 000 м<sup>2</sup></p>
+                <p class="infographic__item-annotation">Недвижимости в стадии строительства</p>
+              </li>
+              <li class="infographic__item">
+                <p class="infographic__item-title">300 000 м<sup>2</sup></p>
+                <p class="infographic__item-annotation">Введено в эксплуатацию</p>
+              </li>
             </ul>
           </div>
-          <h1 class="page-title">Mirogroup — южнороссийский лидер в закупке и экспорте зерна и масличных культур
-            <div class="scrollr scrollr--big-title"><img class="mouse" src="img/sprite.svg#mouse" alt="">
-              <p class="text">Скрольте<br>вниз</p>
+          <div class="content-wrapper__1-4">
+            <div class="infographic__inner-wrapper infographic__inner-wrapper--fix-width">
+              <div class="infographic__wrapper">
+                <object data="img/assets/key.svg" type="image/svg+xml" class="infographic__icon"></object>
+                <p class="infographic__annotation infographic__annotation--bold">100 000 счастливых новоселов</p>
+                <a href="#" class="infographic__informer">
+                  <p class="infographic__informer-text">Выбрать квартиру</p>
+                </a>
+              </div>
             </div>
-          </h1>
-          <div class="page-header__illustration"><img src="img/illustrations/grains.svg" alt=""></div>
-          <div class="page-header__info">
-            <p class="plain">Сегодня наша компания – один из лидеров зернового бизнеса России, мы твердо стоим на ногах и не собираемся останавливаться на достигнутом!</p>
-            <button class="ghost-button" type="button"><span>Стать партнером</span></button>
           </div>
         </div>
       </div>
     </section>
-    <section class="user-content">
+    <section class="history">
       <div class="container">
-        <picture class="user-content__illustration">
-          <source media="(min-width: 960px)" srcset="img/decor-3.webp">
-          <source media="(min-width: 319px)" srcset="img/decor-3-small.webp"><img class="rellax" src="img/decor-3.jpg" data-rellax-speed="-1">
-        </picture>
-        <div class="pattern"></div>
-        <div class="user-content__decor">
-          <object data="img/illustrations/leaf_contour.svg" type="image/svg+xml"></object>
-        </div>
-        <div class="user-content__content">
-          <p class="plain">Мы имеем разветвленную сеть региональных представительств, долгосрочные партнерские отношения с сельхозпроизводителями от небольших фермерских хозяйств до агрохолдингов федерального уровня, инфраструктурными предприятиями и компаниями. Иногда нас спрашивают: «В чем секрет достижения успеха? Почему сельхозтоваропроизводители из года в год доверяют вашей компании? Почему к вашим советам прислушиваются и на вас ориентируются?»</p>
-          <p class="huge-intext" data-sal="slide-up" data-sal-duration="700">Все просто! В нашей команде работают настоящие блестящие профессионалы, люди слова и дела!</p>
-          <p class="plain">Именно поэтому у нас самые надежные поставщики! Именно поэтому у нас самые надежные партнеры! Именно поэтому любой сельхозтоваропроизводитель никогда не останется без внимания наших сотрудников и всегда получит экспертную оценку и грамотную консультацию</p>
-          <div class="user-content__intext-block">
-            <p class="big-intext">Заголовок текстового блока про принадлежность ВТБ Групп</p>
-            <div class="user-content__logo"><img src="img/vtb-group-logo.jpg"></div>
+        <h2 class="history__title">История компании</h2>
+        <div class="history__tabs">
+          <div class="history__tabs-container history__tabs-container--offset-vertical">
+            <div class="history__tabs-wrapper">
+              <a href="#" class="history__tab js-tabBtn js-tabBtn--active">2014</a>
+              <a href="#" class="history__tab js-tabBtn">2015</a>
+              <a href="#" class="history__tab js-tabBtn">2016</a>
+              <a href="#" class="history__tab js-tabBtn">2018</a>
+              <a href="#" class="history__tab js-tabBtn">2021<sup class="history__tab--attention">Планы</sup></a>
+            </div>
           </div>
-          <p class="plain">Разрыв недетерминировано отталкивает термодинамический лептон. Плазменное образование отражает экзотермический эксимер. Возмущение плотности синхронизует межядерный экситон. Если для простоты пренебречь потерями на теплопроводность, то видно, что волновая тень инструментально обнаружима. Электрон оптически стабилен. Непосредственно из законов сохранения следует, что солитон последовательно синхронизует квант. Гравитирующая сфера скалярна. Сверхновая неверифицируемо испускает разрыв. Если предварительно подвергнуть объекты длительному вакуумированию, тело взаимно.</p>
-          <div class="user-content__icon">
-            <object data="img/sprite.svg#leaf-yellow" type="image/svg+xml"></object>
+          <div class="history__tab-content js-tabContent js-tabContent--active">
+            <object data="img/assets/font-dec.svg" type="image/svg+xml" class="history__decor"></object>
+            <div class="history__tab-content-wrapper history__tab-content-wrapper--offset-vertical">
+              <p class="history__tab-content-title">2014 был знаковым для нас годом</p>
+              <p class="history__tab-content-text">Если для простоты пренебречь потерями на теплопроводность, то видно, что жидкость заряжает субсветовой экситон. Объект когерентно притягивает луч. Течение среды, в согласии с традиционными представлениями, последовательно. Осциллятор, в согласии с традиционными представлениями, зеркально отклоняет гравитационный лазер</p>
+            </div>
+            <div class="content-wrapper">
+
+              <a href="#" class="benefit" data-open="benefit">
+                <picture class="benefit__picture">
+                  <source srcset="img/benefit-1.webp" type="image/webp">
+                  <img src="img/benefit-1.jpg" alt="Мы получили сертификацию «Строитель для семьи»" class="benefit__image">
+                </picture>
+                <div class="benefit__wrapper">
+                  <p class="benefit__text">Мы получили сертификацию «Строитель для семьи»</p>
+                  <object data="img/assets/benefit-arrow.svg" type="image/svg+xml" class="benefit-arrow"></object>
+                </div>
+              </a>
+
+
+              <a href="#" class="benefit" data-open="benefit">
+                <picture class="benefit__picture">
+                  <source srcset="img/benefit-2.webp" type="image/webp">
+                  <img src="img/benefit-2.jpg" alt="Многоуровневый подземный паркинг" class="benefit__image">
+                </picture>
+                <div class="benefit__wrapper">
+                  <p class="benefit__text">Многоуровневый подземный паркинг</p>
+                  <object data="img/assets/benefit-arrow.svg" type="image/svg+xml" class="benefit-arrow"></object>
+                </div>
+              </a>
+
+            </div>
+          </div>
+          <div class="history__tab-content js-tabContent">
+            <object data="img/assets/font-dec.svg" type="image/svg+xml" class="history__decor"></object>
+            <div class="history__tab-content-wrapper history__tab-content-wrapper--offset-vertical">
+              <p class="history__tab-content-title">2015 был знаковым для нас годом</p>
+              <p class="history__tab-content-text">Если для простоты пренебречь потерями на теплопроводность, то видно, что жидкость заряжает субсветовой экситон. Объект когерентно притягивает луч. Течение среды, в согласии с традиционными представлениями, последовательно. Осциллятор, в согласии с традиционными представлениями, зеркально отклоняет гравитационный лазер</p>
+            </div>
+            <div class="content-wrapper">
+
+              <a href="#" class="benefit" data-open="benefit">
+                <picture class="benefit__picture">
+                  <source srcset="img/vid1.webp" type="image/webp">
+                  <img src="img/vid1.jpg" alt="Мы получили сертификацию «Строитель для семьи»" class="benefit__image">
+                </picture>
+                <div class="benefit__wrapper">
+                  <p class="benefit__text">Мы получили сертификацию «Строитель для семьи»</p>
+                  <object data="img/assets/benefit-arrow.svg" type="image/svg+xml" class="benefit-arrow"></object>
+                </div>
+              </a>
+
+
+              <a href="#" class="benefit" data-open="benefit">
+                <picture class="benefit__picture">
+                  <source srcset="img/benefit-2.webp" type="image/webp">
+                  <img src="img/benefit-2.jpg" alt="Многоуровневый подземный паркинг" class="benefit__image">
+                </picture>
+                <div class="benefit__wrapper">
+                  <p class="benefit__text">Многоуровневый подземный паркинг</p>
+                  <object data="img/assets/benefit-arrow.svg" type="image/svg+xml" class="benefit-arrow"></object>
+                </div>
+              </a>
+
+            </div>
+          </div>
+          <div class="history__tab-content js-tabContent">
+            <object data="img/assets/font-dec.svg" type="image/svg+xml" class="history__decor"></object>
+            <div class="history__tab-content-wrapper history__tab-content-wrapper--offset-vertical">
+              <p class="history__tab-content-title">2016 был знаковым для нас годом</p>
+              <p class="history__tab-content-text">Если для простоты пренебречь потерями на теплопроводность, то видно, что жидкость заряжает субсветовой экситон. Объект когерентно притягивает луч. Течение среды, в согласии с традиционными представлениями, последовательно. Осциллятор, в согласии с традиционными представлениями, зеркально отклоняет гравитационный лазер</p>
+            </div>
+            <div class="content-wrapper">
+
+              <a href="#" class="benefit" data-open="benefit">
+                <picture class="benefit__picture">
+                  <source srcset="img/benefit-1.webp" type="image/webp">
+                  <img src="img/benefit-1.jpg" alt="Мы получили сертификацию «Строитель для семьи»" class="benefit__image">
+                </picture>
+                <div class="benefit__wrapper">
+                  <p class="benefit__text">Мы получили сертификацию «Строитель для семьи»</p>
+                  <object data="img/assets/benefit-arrow.svg" type="image/svg+xml" class="benefit-arrow"></object>
+                </div>
+              </a>
+
+
+              <a href="#" class="benefit" data-open="benefit">
+                <picture class="benefit__picture">
+                  <source srcset="img/benefit-2.webp" type="image/webp">
+                  <img src="img/benefit-2.jpg" alt="Многоуровневый подземный паркинг" class="benefit__image">
+                </picture>
+                <div class="benefit__wrapper">
+                  <p class="benefit__text">Многоуровневый подземный паркинг</p>
+                  <object data="img/assets/benefit-arrow.svg" type="image/svg+xml" class="benefit-arrow"></object>
+                </div>
+              </a>
+
+            </div>
+          </div>
+          <div class="history__tab-content js-tabContent">
+            <object data="img/assets/font-dec.svg" type="image/svg+xml" class="history__decor"></object>
+            <div class="history__tab-content-wrapper history__tab-content-wrapper--offset-vertical">
+              <p class="history__tab-content-title">2018 был знаковым для нас годом</p>
+              <p class="history__tab-content-text">Если для простоты пренебречь потерями на теплопроводность, то видно, что жидкость заряжает субсветовой экситон. Объект когерентно притягивает луч. Течение среды, в согласии с традиционными представлениями, последовательно. Осциллятор, в согласии с традиционными представлениями, зеркально отклоняет гравитационный лазер</p>
+            </div>
+            <div class="content-wrapper">
+
+              <a href="#" class="benefit" data-open="benefit">
+                <picture class="benefit__picture">
+                  <source srcset="img/benefit-1.webp" type="image/webp">
+                  <img src="img/benefit-1.jpg" alt="Мы получили сертификацию «Строитель для семьи»" class="benefit__image">
+                </picture>
+                <div class="benefit__wrapper">
+                  <p class="benefit__text">Мы получили сертификацию «Строитель для семьи»</p>
+                  <object data="img/assets/benefit-arrow.svg" type="image/svg+xml" class="benefit-arrow"></object>
+                </div>
+              </a>
+
+
+              <a href="#" class="benefit" data-open="benefit">
+                <picture class="benefit__picture">
+                  <source srcset="img/benefit-2.webp" type="image/webp">
+                  <img src="img/benefit-2.jpg" alt="Многоуровневый подземный паркинг" class="benefit__image">
+                </picture>
+                <div class="benefit__wrapper">
+                  <p class="benefit__text">Многоуровневый подземный паркинг</p>
+                  <object data="img/assets/benefit-arrow.svg" type="image/svg+xml" class="benefit-arrow"></object>
+                </div>
+              </a>
+
+            </div>
+          </div>
+          <div class="history__tab-content js-tabContent">
+            <object data="img/assets/font-dec.svg" type="image/svg+xml" class="history__decor"></object>
+            <div class="history__tab-content-wrapper history__tab-content-wrapper--offset-vertical">
+              <p class="history__tab-content-title">2021 был знаковым для нас годом</p>
+              <p class="history__tab-content-text">Если для простоты пренебречь потерями на теплопроводность, то видно, что жидкость заряжает субсветовой экситон. Объект когерентно притягивает луч. Течение среды, в согласии с традиционными представлениями, последовательно. Осциллятор, в согласии с традиционными представлениями, зеркально отклоняет гравитационный лазер</p>
+            </div>
+            <div class="content-wrapper">
+
+              <a href="#" class="benefit" data-open="benefit">
+                <picture class="benefit__picture">
+                  <source srcset="img/benefit-1.webp" type="image/webp">
+                  <img src="img/benefit-1.jpg" alt="Мы получили сертификацию «Строитель для семьи»" class="benefit__image">
+                </picture>
+                <div class="benefit__wrapper">
+                  <p class="benefit__text">Мы получили сертификацию «Строитель для семьи»</p>
+                  <object data="img/assets/benefit-arrow.svg" type="image/svg+xml" class="benefit-arrow"></object>
+                </div>
+              </a>
+
+
+              <a href="#" class="benefit" data-open="benefit">
+                <picture class="benefit__picture">
+                  <source srcset="img/benefit-2.webp" type="image/webp">
+                  <img src="img/benefit-2.jpg" alt="Многоуровневый подземный паркинг" class="benefit__image">
+                </picture>
+                <div class="benefit__wrapper">
+                  <p class="benefit__text">Многоуровневый подземный паркинг</p>
+                  <object data="img/assets/benefit-arrow.svg" type="image/svg+xml" class="benefit-arrow"></object>
+                </div>
+              </a>
+
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="buying-wheat">
+    <section class="section-offset-top">
       <div class="container">
-        <div class="pattern pattern--career"></div>
-        <div class="line"></div>
-        <h2 class="buying-wheat__title">Закупаем не только зерновые, но и масличные</h2>
-        <div class="buying-wheat__illustration"><img src="img/illustrations/grains.svg" alt="" data-sal="slide-up" data-sal-duration="1000"></div>
-        <div class="buying-wheat__content">
-          <p class="plain">Готовы рассматривать любые предложения аграриев по типу закупаемой продукции, а также объяснить особенности реализации разных культур</p>
-          <button class="solid-button" type="button"><span>Получить консультацию</span></button>
+        <h2>Наша мечта — дарить радость и комфорт людям</h2>
+        <div class="content-wrapper">
+          <div class="tile">
+            <div class="tile__inner">
+              <div class="tile__wrapper">
+                <p class="tile__plain-title">Комплексная застройка</p>
+                <p class="tile__text tile__text--offset-bottom">Строительная компания «Семья» возводит не просто жилые комплексы, а целые микрорайоны. Приобретая квартиру на старте продаж, к моменту сдачи дома вы становитесь обладателем жилья в обжитом районе с развитой инфраструктурой – школами, детскими садами, магазинами и кафе. Такая недвижимость пользуется большим спросом и ценится в разы дороже новостроек в «чистом поле».</p>
+              </div>
+            </div>
+          </div>
+          <div class="tile">
+            <div class="tile__inner">
+              <picture class="tile__picture-wrapper">
+                <source srcset="img/dir.webp" type="image/webp">
+                <img src="img/dir.jpg" alt="Директор" class="tile__picture">
+              </picture>
+            </div>
+          </div>
+          <div class="tile">
+            <div class="tile__inner">
+              <div class="tile__wrapper">
+                <p class="tile__plain-title">Инвесторам</p>
+                <p class="tile__text tile__text--offset-bottom">Как сохранить с трудом заработанные деньги? Опыт показывает, что вклады в недвижимость не только сберегут, но и преумножат накопления. Независимо от состояния рынка недвижимости, стоимость квадратного метра стабильно растет с каждым годом.</p>
+              </div>
+              <div class="tile__wrapper">
+
+                <div class="button-wrapper">
+                  <a href="#" class="ghost-icon-button">
+                    <object data="img/service-icons.svg#more" type="image/svg+xml" class="ghost-icon-button__icon"></object>
+                    <span class="ghost-icon-button__text">Узнать больше</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="tile">
+            <div class="tile__inner">
+              <picture class="tile__picture-wrapper">
+                <source srcset="img/dir-2.webp" type="image/webp">
+                <img src="img/dir-2.jpg" alt="Фон с ЖК" class="tile__picture">
+              </picture>
+              <div class="tile__constructor-wrapper">
+                <p class="tile__title">У вас есть вопросы? Напишите нам!</p>
+                <div class="tile__button-wrapper">
+
+                  <a href="#" class="solid-btn  ">
+                    <span class="solid-btn__text">Обратная связь</span>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tile">
+            <div class="tile__inner">
+              <div class="tile__wrapper">
+                <p class="tile__plain-title">Государственная гарантия</p>
+                <p class="tile__text">Строительство регулируется 214-м федеральным законом</p>
+                <p class="tile__text tile__text--subheader">Это значит, что ваша квартира:</p>
+                <ul class="tile__list">
+                  <li class="tile__list-element">имеет всю разрешительную документацию;</li>
+                  <li class="tile__list-element">соответствует заявленному уровню качества;</li>
+                  <li class="tile__list-element">будет сдана в срок.</li>
+                </ul>
+              </div>
+              <div class="tile__wrapper tile__wrapper--bottom">
+
+                <div class="button-wrapper">
+                  <a href="#" class="ghost-icon-button">
+                    <object data="img/service-icons.svg#more" type="image/svg+xml" class="ghost-icon-button__icon"></object>
+                    <span class="ghost-icon-button__text">Узнать больше</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="tile">
+            <div class="tile__inner">
+              <picture class="tile__picture-wrapper">
+                <source srcset="img/dir-3.webp" type="image/webp">
+                <img src="img/dir-3.jpg" alt="Фон с ЖК" class="tile__picture">
+              </picture>
+              <div class="tile__constructor-wrapper">
+                <p class="tile__title">Устойчивое<br>развитие</p>
+                <div class="tile__button-wrapper">
+
+                  <a href="#" class="solid-btn  solid-btn--white">
+                    <span class="solid-btn__text">Обратная связь</span>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="docs">
+      <div class="container">
+        <div class="content-wrapper">
+          <div class="content-wrapper__half">
+            <h2 class="docs__title">Учредительные документы</h2>
+          </div>
+          <div class="content-wrapper__half">
+            <p class="docs__text">Если для простоты пренебречь потерями на теплопроводность, то видно, что жидкость заряжает субсветовой экситон. Объект когерентно притягивает луч. Течение среды, в согласии с традиционными представлениями, последовательно. Осциллятор, в согласии с традиционными представлениями, зеркально отклоняет гравитационный лазер</p>
+            <ul class="docs__list">
+              <li class="docs__item">
+                <a href="#" class="docs__item-link">
+                  <object data="img/assets/pdf-icon.svg" type="image/svg+xml" class="docs__item-link-icon"></object>
+                  <span class="docs__item-text">Устав ООО «Семья», 6-я редакция
+                    <span class="docs__item-text-annotation">1.17&nbspМб</span>
+                  </span>
+                </a>
+              </li>
+              <li class="docs__item">
+                <a href="#" class="docs__item-link">
+                  <object data="img/assets/pdf-icon.svg" type="image/svg+xml" class="docs__item-link-icon"></object>
+                  <span class="docs__item-text">Устав ООО «Семья», 6-я редакция
+                    <span class="docs__item-text-annotation">1.17&nbspМб</span>
+                  </span>
+                </a>
+              </li>
+              <li class="docs__item">
+                <a href="#" class="docs__item-link">
+                  <object data="img/assets/pdf-icon.svg" type="image/svg+xml" class="docs__item-link-icon"></object>
+                  <span class="docs__item-text">Устав ООО «Семья», 6-я редакция
+                    <span class="docs__item-text-annotation">1.17&nbspМб</span>
+                  </span>
+                </a>
+              </li>
+              <li class="docs__item">
+                <a href="#" class="docs__item-link">
+                  <object data="img/assets/pdf-icon.svg" type="image/svg+xml" class="docs__item-link-icon"></object>
+                  <span class="docs__item-text">Устав ООО «Семья», 6-я редакция
+                    <span class="docs__item-text-annotation">1.17&nbspМб</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="button-wrapper">
+              <a href="#" class="ghost-icon-button">
+                <object data="img/service-icons.svg#more" type="image/svg+xml" class="ghost-icon-button__icon"></object>
+                <span class="ghost-icon-button__text">Показать все документы — 16</span>
+              </a>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
     <footer class="footer">
       <div class="container">
-        <div class="footer__info">
-          <div class="footer__logos-wrapper"><a class="footer__logo" href="index.html"><img src="img/mirogroup-logo.jpg" alt=""></a><a class="footer__logo" href="#"><img class="footer__logo" src="img/vtb-group-logo.jpg" alt=""></a></div>
-          <p class="smalltext">ООО «Мирогрупп Ресурсы»<br>350049, Краснодарский край, Краснодар г, Красных Партизан ул, дом № 200, оф. эт/пом 6.7/81.87<br><span><a class="smalltext--link" href="mailto:info@mgresources.ru">info@mgresources.ru</a></span></p>
-        </div>
-        <div class="footer__content">
-          <div class="footer__menu">
-            <div class="footer__links">
-              <ul class="footer__links-a">
-                <li><a href="price.html">Прайс-лист</a></li>
-                <li><a href="partners.html">Поставщикам</a></li>
-                <li><a href="#">Авансирование</a></li>
-              </ul>
-              <ul class="footer__links-b">
-                <li><a href="about.html">О компании</a></li>
-                <li><a href="career.html">Вакансии</a></li>
-              </ul>
-              <ul class="footer__links-c">
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Личный кабинет</a></li>
-              </ul>
-              <div class="footer__lang">
-                <div class="menu-tools"><a class="menu-tools__link" href="#">
-                    <div class="menu-tools__icon">   <img src="img/sprite.svg#globe" alt=""></div>
-                    <div class="menu-tools__text-wrapper">
-                      <p class="menu-tools__label">Switch to:</p>
-                      <p class="menu-tools__text">English</p>
-                    </div></a></div>
+        <div class="footer__content-wrapper">
+          <div class="footer__block">
+            <ul class="footer__links-list">
+              <li class="footer__links-item"><a href="#" class="footer__link">О компании</a>
+                <ul class="footer__links-list--submenu">
+                  <li class="footer__links-item footer__links-item--submenu"><a href="#" class="footer__link footer__link--submenu">Вакансии</a></li>
+                  <li class="footer__links-item footer__links-item--submenu"><a href="#" class="footer__link footer__link--submenu">Команда</a></li>
+                </ul>
+              </li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Новости</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Документы</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Фото</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Видео</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Сделанные проекты</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__block footer__block--half">
+            <ul class="footer__links-list">
+              <li class="footer__links-item"><a href="#" class="footer__link">Акции</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Новостройки</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Машиноместа</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Кладовые помещения</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Коммерция</a></li>
+            </ul>
+            <ul class="footer__social-list">
+              <li class="footer__social-list-item"><a href="#" class="footer__social-link"><object data="img/socials.svg#instagram" type="image/svg+xml" class="footer__social-icon"></object></a></li>
+              <li class="footer__social-list-item"><a href="#" class="footer__social-link"><object data="img/socials.svg#facebook" type="image/svg+xml" class="footer__social-icon"></object></a></li>
+              <li class="footer__social-list-item"><a href="#" class="footer__social-link"><object data="img/socials.svg#youtube" type="image/svg+xml" class="footer__social-icon"></object></a></li>
+              <li class="footer__social-list-item"><a href="#" class="footer__social-link"><object data="img/socials.svg#vk" type="image/svg+xml" class="footer__social-icon"></object></a></li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <div class="footer__wrapper">
+              <a href="tel:88612055084" class="footer__link">8 (861) 205-50-84</a>
+              <p class="footer__text">г. Краснодар, ул. им. Воровского, д. 172<br>Пн.-Пт.: с 09:00 до 18:00</p>
+              <a href="mailto:info@family-yug.ru" class="footer__link footer__link--standalone">info@family-yug.ru</a>
+
+              <div class="button-wrapper">
+                <a href="#" class="ghost-icon-button">
+                  <object data="img/service-icons.svg#message" type="image/svg+xml" class="ghost-icon-button__icon"></object>
+                  <span class="ghost-icon-button__text">Написать сообщение</span>
+                </a>
               </div>
+
             </div>
+            <p class="footer__text"><a href="#" class="footer__link">Создание сайта</a> — Very Good</p>
           </div>
-          <div class="footer__service">
-            <div class="footer__disclaimer">
-              <p class="smalltext">© ООО «Мирогрупп Ресурсы», 2020</p><a class="smalltext smalltext--link" href="#">Политика конфиденциальности</a>
-            </div>
-            <div class="footer__phone">
-              <p class="smalltext">По всем вопросам</p><a class="smalltext smalltext--phone" href="tel:8(861)279-20-78">8 (861) 279-20-78</a>
-            </div>
-          </div>
+        </div>
+        <div class="footer__low">
+          <p class="footer__text footer__text--annotation">© 2019 ООО «Семья». Строительная компания</p>
+          <a href="#" class="footer__link">Политика конфиденциальности</a>
         </div>
       </div>
     </footer>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/sal.js"></script>
-    <script src="js/rellax.min.js"></script>
-    <script src="js/SmoothScroll.min.js"></script>
-    <script src="js/TabConstructor.js"></script>
-    <script src="js/choices.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+
+  </main>
+
+
+
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/nouislider.min.js"></script>
+  <script src="js/imask.min.js"></script>
+  <script src="js/wheel-zoom.min.js"></script>
+  <script src="js/DModal.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>

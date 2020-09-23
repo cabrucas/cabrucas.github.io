@@ -1,244 +1,56 @@
 <!DOCTYPE html>
-<html lang="ru-Ru">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Mirogroup Главная</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;family=Jura:wght@300;700&amp;display=swap">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/sal.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/media.css">
-  </head>
-  <body>
-    <!--регионы-->
-    <header>
-      <div class="menu-container">
-        <div class="menu-wrapper"><a class="logo-link" href="index.html">
-            <picture class="logo-wrapper">
-              <source media="(max-width: 1920px)" srcset="img/logo.webp"><img class="logo-mrg" src="img/logo.png" alt="Логотип Мирогрупп">
-            </picture></a>
-          <div class="burger" id="burgerMenu">
-            <div class="burger__menu" id="burgerMenuStripes"></div>
-          </div>
-          <ul class="nav">
-            <li class="nav__item"><a class="nav__link nav__link--active" href="price.html">Прайс-лист</a></li>
-            <li class="nav__item"><a class="nav__link" href="partners.html">Поставщикам</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Авансирование</a></li>
-            <li class="nav__item"><a class="nav__link" href="about.html">О компании</a></li>
-            <li class="nav__item"><a class="nav__link" href="career.html">Вакансии</a></li>
-            <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="menu-tools"><a class="menu-tools__link" href="#">
-            <div class="menu-tools__icon">   <img src="img/sprite.svg#globe" alt="Глобус"></div>
-            <div class="menu-tools__text-wrapper">
-              <p class="menu-tools__label">Switch to:</p>
-              <p class="menu-tools__text">English</p>
-            </div></a><a class="menu-tools__link" href="#">
-            <div class="menu-tools__icon">   <img src="img/sprite.svg#account" alt="Аккаунт"></div>
-            <div class="menu-tools__text-wrapper">
-              <p class="menu-tools__label">Вход и регистрация</p>
-              <p class="menu-tools__text">Личный кабинет</p>
-            </div></a></div>
-      </div>
-    </header>
-    <section class="dropper" id="dropperSection">
-      <div class="light" id="dropper-darkener"></div>
-      <div class="dropper__container" id="dropperPart">
-        <div class="menu-tools"><a class="menu-tools__link" href="#">
-            <div class="menu-tools__icon">   <img src="img/sprite.svg#globe" alt="Глобус"></div>
-            <div class="menu-tools__text-wrapper">
-              <p class="menu-tools__label">Switch to:</p>
-              <p class="menu-tools__text">English</p>
-            </div></a><a class="menu-tools__link" href="#">
-            <div class="menu-tools__icon">   <img src="img/sprite.svg#account" alt="Аккаунт"></div>
-            <div class="menu-tools__text-wrapper">
-              <p class="menu-tools__label">Вход и регистрация</p>
-              <p class="menu-tools__text">Личный кабинет</p>
-            </div></a></div>
-      </div>
-    </section>
-    <section class="welcome">
-      <div class="container">
-        <div class="title-wrapper">
-          <h1 class="title title--decor">We are every link<br>We are all the chain</h1><img class="decor-leaf" src="img/sprite.svg#leaf" alt="листик">
-        </div>
-        <div class="chapters-set"><a class="chapter" href="#">
-            <p class="chapter__header">Поставщикам</p>
-            <div class="chapter__icon"><img class="chapter__fw" src="img/sprite.svg#arrow" alt="Стрелка"></div></a><a class="chapter" href="#">
-            <p class="chapter__header">Прайс-лист</p>
-            <div class="chapter__icon"><img class="chapter__fw" src="img/sprite.svg#arrow" alt="Стрелка"></div></a><a class="chapter" href="#">
-            <p class="chapter__header">Авансирование</p>
-            <div class="chapter__icon"><img class="chapter__fw" src="img/sprite.svg#arrow" alt="Стрелка"></div></a></div>
-      </div>
-      <div class="swiper-container mainpage-slider">
-        <div class="swiper-wrapper mainpage-slider-wrapper">
-          <div class="swiper-slide mainpage-slide">
-            <picture class="slide-pic">
-              <source media="(max-width: 1920px)" srcset="img/granary-1.webp" loading="lazy"><img class="slide-pic__image rellax" src="img/granary-1.jpg" loading="lazy" data-rellax-speed="-2" alt="Зернохранилище">
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture class="slide-pic">
-              <source media="(max-width: 1920px)" srcset="img/decor-1.webp" loading="lazy"><img class="slide-pic__image rellax" src="img/decor-1.jpg" loading="lazy" data-rellax-speed="-2" alt="Зерно">
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture class="slide-pic">
-              <source media="(max-width: 1920px)" srcset="img/decor-2.webp" loading="lazy" alt="Зернохранилище в поле"><img class="slide-pic__image rellax" src="img/decor-2.jpg" loading="lazy" data-rellax-speed="-2">
-            </picture>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="chapters-overlays chapters-overlays--hide">
-      <div class="container">
-        <div class="chapters-modal-set">
-          <div class="chapter-overlay">
-            <div class="chapter-overlay__wrapper">
-              <div class="chapter-overlay__header">
-                <p class="chapter-overlay__title">Поставщикам</p>
-                <div class="chapter-overlay__close"></div>
-              </div>
-              <p class="chapter-overlay__text">ООО «Мирогрупп Ресурсы» — российская компания, осуществляющая закупку и экспорт сельскохозяйственной продукции зерновой и масличной групп. Компания обеспечивает качественную работу сложной и важной цепочки, связывая фермерские поля и потребительские прилавки по всему миру</p><img class="chapter-overlay__illustration" src="img/illustrations/illustration-combine.svg" alt="Комбайн">
-            </div>
-            <ul class="chapter-overlay__list"><a class="chapter-overlay__link" href="#">Скачать документы на регистрацию</a><a class="chapter-overlay__link" href="#">Регистрация поставщика</a><a class="chapter-overlay__link" href="#">Карта партнера</a></ul>
-          </div>
-          <div class="chapter-overlay">
-            <div class="chapter-overlay__wrapper">
-              <div class="chapter-overlay__header">
-                <p class="chapter-overlay__title">Прайс-лист</p>
-                <div class="chapter-overlay__close"></div>
-              </div>
-              <p class="chapter-overlay__text">ООО «Мирогрупп Ресурсы» — российская компания, осуществляющая закупку и экспорт сельскохозяйственной продукции зерновой и масличной групп. Компания обеспечивает качественную работу сложной и важной цепочки, связывая фермерские поля и потребительские прилавки по всему миру</p><img class="chapter-overlay__illustration" src="img/illustrations/illustration-combine.svg" alt="Комбайн">
-            </div>
-            <ul class="chapter-overlay__list"><a class="chapter-overlay__link" href="#">Портовые элеваторы</a><a class="chapter-overlay__link" href="#">Линейные элеваторы</a></ul>
-          </div>
-          <div class="chapter-overlay">
-            <div class="chapter-overlay__wrapper">
-              <div class="chapter-overlay__header">
-                <p class="chapter-overlay__title">Аванстирование</p>
-                <div class="chapter-overlay__close"></div>
-              </div>
-              <p class="chapter-overlay__text">ООО «Мирогрупп Ресурсы» — российская компания, осуществляющая закупку и экспорт сельскохозяйственной продукции зерновой и масличной групп. Компания обеспечивает качественную работу сложной и важной цепочки, связывая фермерские поля и потребительские прилавки по всему миру</p><img class="chapter-overlay__illustration" src="img/illustrations/illustration-combine.svg" alt="Комбайн">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="container">
-        <h2 class="about__title">Колебание, как можно показать с помощью не совсем тривиальных вычислений, непрозрачно
-          <div class="scrollr"><img class="mouse" src="img/sprite.svg#mouse" alt="">
-            <p class="text">Скрольте<br>вниз</p>
-          </div>
-        </h2>
-        <div class="about__illustration"><img src="img/illustrations/grains.svg" alt="Колоски" data-sal="slide-up" data-sal-duration="1000"></div>
-        <p class="about__text plain">Линза, если рассматривать процессы в рамках специальной теории относительности, отклоняет взрыв. Вселенная трансформирует ускоряющийся кварк — все дальнейшее далеко выходит за рамки текущего исследования и не будет здесь рассматриваться. Волна когерентна. Волна концентрирует плазменный поток</p>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="services">
-          <div class="services__intro">
-            <div class="pattern"></div>
-            <div class="services__title">
-              <p class="plain">Линза, если рассматривать процессы в рамках специальной теории относительности, отклоняет взрыв</p>
-              <button class="ghost-button"><span>Подробнее о компании</span></button>
-            </div>
-            <picture class="services__illustration" data-sal="slide-up" data-sal-duration="1000">
-              <source media="(max-width: 1920px)" srcset="img/decor-2-small.webp" loading="lazy"><img class="services__image" src="img/decor-2-small.jpg" loading="lazy" alt="Зернохранилище">
-            </picture>
-          </div>
-              <div class="service-set"><a class="card" href="#" data-sal="slide-up" data-sal-duration="1500">
-                  <picture class="card__illustration">
-                    <source media="(max-width: 1920px)" srcset="img/decor-1-small.webp"><img src="img/decor-1-small.jpg" loading="lazy">
-                  </picture>
-                  <article class="card__info">
-                    <div class="card__back-image">
-                      <object data="img/illustrations/card-back.svg" type="image/svg+xml" alt="Зерно"></object>
-                    </div>
-                    <p class="card__pretext">Регистрация</p>
-                    <p class="card__header">Стать поставщиком</p>
-                    <div class="card__plus"></div>
-                  </article></a><a class="card" href="#" data-sal="slide-up" data-sal-duration="1000">
-                  <picture class="card__illustration">
-                    <source media="(max-width: 1920px)" srcset="img/decor-3-small.webp"><img src="img/decor-3-small.png" loading="lazy">
-                  </picture>
-                  <article class="card__info">
-                    <div class="card__back-image">
-                      <object data="img/illustrations/card-back.svg" type="image/svg+xml" alt="Зерно"></object>
-                    </div>
-                    <p class="card__pretext">Узнать больше</p>
-                    <p class="card__header">Получить консультацию</p>
-                    <div class="card__plus"></div>
-                  </article></a></div>
-        </div>
-      </div>
-    </section>
-    <section class="buying-wheat">
-      <div class="container">
-        <div class="pattern pattern--career"></div>
-        <div class="line"></div>
-        <h2 class="buying-wheat__title">Закупаем не только зерновые, но и масличные</h2>
-        <div class="buying-wheat__illustration"><img src="img/illustrations/grains.svg" alt="" data-sal="slide-up" data-sal-duration="1000"></div>
-        <div class="buying-wheat__content">
-          <p class="plain">Готовы рассматривать любые предложения аграриев по типу закупаемой продукции, а также объяснить особенности реализации разных культур</p>
-          <button class="solid-button" type="button"><span>Получить консультацию</span></button>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__info">
-          <div class="footer__logos-wrapper"><a class="footer__logo" href="index.html"><img src="img/mirogroup-logo.jpg" alt=""></a><a class="footer__logo" href="#"><img class="footer__logo" src="img/vtb-group-logo.jpg" alt=""></a></div>
-          <p class="smalltext">ООО «Мирогрупп Ресурсы»<br>350049, Краснодарский край, Краснодар г, Красных Партизан ул, дом № 200, оф. эт/пом 6.7/81.87<br><span><a class="smalltext--link" href="mailto:info@mgresources.ru">info@mgresources.ru</a></span></p>
-        </div>
-        <div class="footer__content">
-          <div class="footer__menu">
-            <div class="footer__links">
-              <ul class="footer__links-a">
-                <li><a href="price.html">Прайс-лист</a></li>
-                <li><a href="partners.html">Поставщикам</a></li>
-                <li><a href="#">Авансирование</a></li>
-              </ul>
-              <ul class="footer__links-b">
-                <li><a href="about.html">О компании</a></li>
-                <li><a href="career.html">Вакансии</a></li>
-              </ul>
-              <ul class="footer__links-c">
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Личный кабинет</a></li>
-              </ul>
-              <div class="footer__lang">
-                <div class="menu-tools"><a class="menu-tools__link" href="#">
-                    <div class="menu-tools__icon">   <img src="img/sprite.svg#globe" alt=""></div>
-                    <div class="menu-tools__text-wrapper">
-                      <p class="menu-tools__label">Switch to:</p>
-                      <p class="menu-tools__text">English</p>
-                    </div></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="footer__service">
-            <div class="footer__disclaimer">
-              <p class="smalltext">© ООО «Мирогрупп Ресурсы», 2020</p><a class="smalltext smalltext--link" href="#">Политика конфиденциальности</a>
-            </div>
-            <div class="footer__phone">
-              <p class="smalltext">По всем вопросам</p><a class="smalltext smalltext--phone" href="tel:8(861)279-20-78">8 (861) 279-20-78</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/sal.js"></script>
-    <script src="js/rellax.min.js"></script>
-    <script src="js/SmoothScroll.min.js"></script>
-    <script src="js/TabConstructor.js"></script>
-    <script src="js/choices.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СК «Семья»</title>
+  <style>
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    a {
+      font-family: sans-serif;
+      font-size: 16px;
+      padding: 8px 0
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    h1 {
+      font-family: sans-serif;
+      font-size: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Верстка проекта СК «Семья»</h1>
+    <ul>
+      <li><a href="main.html" target="blank">Главная страница</a></li>
+      <li><a href="buildings-list.html" target="blank">Список новостроек</a></li>
+      <li><a href="photogallery.html" target="blank">Фотогалерея</a></li>
+      <li><a href="videogallery.html" target="blank">Видеогалерея</a></li>
+      <li><a href="stores.html" target="blank">Акции</a></li>
+      <li><a href="store.html" target="blank">Акция</a></li>
+      <li><a href="team.html" target="blank">Команда</a></li>
+      <li><a href="contacts.html" target="blank">Контакты</a></li>
+      <li><a href="done.html" target="blank">Сданные проекты</a></li>
+      <li><a href="about.html" target="blank">О компании</a></li>
+      <li><a href="complex.html" target="blank">Карточка ЖК</a></li>
+    </ul>
+  </div>
+</body>
+
 </html>

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper-bundle.css">
+  <link rel="stylesheet" href="css/nouislider.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <main>
+
+    <header class="header js-hide">
+      <section class="header__section header__section--upper">
+        <div class="container">
+          <div class="header__section-content-wrapper">
+            <ul class="header__upper-menu-list">
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link header__upper-menu-link--list">О компании</a>
+                <div class="header__submenu">
+                  <ul class="header__upper-submenu-list">
+                    <li class="header__upper-submenu-item">
+                      <a href="#" class="header__upper-submenu-link">Вакансии</a>
+                    </li>
+                    <li class="header__upper-submenu-item">
+                      <a href="#" class="header__upper-submenu-link">Команда</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link">Новости</a>
+              </li>
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link">Фото</a>
+              </li>
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link">Видео</a>
+              </li>
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link">Сданные проекты</a>
+              </li>
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link">Контакты</a>
+              </li>
+            </ul>
+            <div class="header__button-wrapper">
+              <button class="header-btn">
+                <span>Заказать звонок</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="header__section header__section--main">
+        <div class="container container--fullheight">
+          <div class="header__section-content-wrapper">
+            <div class="header__element-wrapper">
+              <object data="img/SKlogo.svg" type="image/svg+xml" class="header__logo"></object>
+              <a href="main.html" class="header__logo-link"></a>
+            </div>
+            <nav class="header__navigation-menu">
+              <ul class="header__main-menu">
+                <li class="header__main-menu-item header__main-menu-item--active"><a href="#" class="header__main-menu-link">Акции</a></li>
+                <li class="header__main-menu-item"><a href="#" class="header__main-menu-link">Новостройки</a></li>
+                <li class="header__main-menu-item"><a href="#" class="header__main-menu-link">Машиноместа</a></li>
+                <li class="header__main-menu-item"><a href="#" class="header__main-menu-link">Кладовые помещения</a></li>
+                <li class="header__main-menu-item"><a href="#" class="header__main-menu-link">Коммерция</a></li>
+              </ul>
+              <button class="header__mobile-menu" data-open="mobileMenu">
+                <span></span>
+              </button>
+            </nav>
+            <div class="header__element-wrapper header__element-wrapper--reversed">
+              <a href="tel:+78612055084" class="header__phone">+7 (861) 205-50-84</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="mob-dropper">
+      <div class="mob-dropper__darkener" data-close="true"></div>
+      <div class="mob-dropper__menu">
+        <div class="mob-dropper__inner-wrapper">
+          <ul class="mob-dropper__menu-list">
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Акции</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Новостройки</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Машиноместа</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Кладовые помещения</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Коммерция</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">О компании</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Новости</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Документы</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Фото</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Видео</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Сданные проекты</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+      <button class="mob-dropper__close" data-close="true">&times</button>
+
+    </section>
+    <section class="slider-section">
+      <div class="swiper-container main-slider">
+        <div class="swiper-wrapper main-slider__wrapper">
+          <div class="swiper-slide main-slider__slide">
+            <img src="img/elem.jpg" alt="Акция строительства в срок" class="main-slider__picture">
+            <div class="main-slider__slide-inner">
+              <p class="main-slider__header">Строим точно в&nbspсрок</p>
+              <p class="main-slider__text">Строительная компания с хорошими привычками</p>
+              <a href="#" class="main-slider__informer">
+                <p class="main-slider__informer-text">Выбрать квартиру</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide main-slider__slide">
+            <img src="img/elem.jpg" alt="Акция строительства в срок" class="main-slider__picture">
+            <div class="main-slider__slide-inner">
+              <p class="main-slider__header">Строим точно в&nbspсрок</p>
+              <p class="main-slider__text">Строительная компания с хорошими привычками</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination main-slider__pagination"></div>
+        <div class="swiper-button-prev main-slider__arrow main-slider__arrow--prev"></div>
+        <div class="swiper-button-next main-slider__arrow main-slider__arrow--next"></div>
+      </div>
+    </section>
+    <section class="objects-section">
+      <div class="container">
+        <h2>Объекты</h2>
+        <div class="controllers-set controllers-set--bottom-space">
+
+          <div class="select-wrapper">
+            <div class="select">
+              <label for="citySelector" class="select__label">Город:</label>
+              <select name="city" id="citySelector" class="select__input">
+                <option value="Выберите город" selected>Выберите город</option>
+                <option value="Краснодар">Краснодар</option>
+                <option value="Новороссийск">Новороссийск</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="button-wrapper">
+            <a href="#" class="ghost-icon-button">
+              <object data="img/service-icons.svg#location" type="image/svg+xml" class="ghost-icon-button__icon"></object>
+              <span class="ghost-icon-button__text">На карте</span>
+            </a>
+          </div>
+
+        </div>
+        <div class="content-wrapper">
+
+          <div class="complex-tile js-animatedTile">
+            <a href="#" class="complex-tile__inner">
+              <picture class="complex-tile__picture-wrapper">
+                <source srcset="img/image.webp" type="image/webp">
+                <img src="img/image.jpg" alt="Пейзаж жилого комплекса" class="complex-tile__picture">
+              </picture>
+              <ul class="complex-tile__tags-list">
+                <li class="complex-tile__tag complex-tile__tag--date">II кв. 2019</li>
+              </ul>
+              <div class="complex-tile__info">
+                <div class="complex-tile__info-wrapper">
+                  <p class="complex-tile__info-header">ЖК «Все свои»</p>
+                  <p class="complex-tile__info-adress">Краснодар, ул. Колхозная, 5</p>
+                </div>
+                <p class="complex-tile__price">Квартиры от <span data-complexTileCardPice="true">2 020 000</span> ₽</p>
+                <div class="complex-tile__hover-block js-hoverBlock">
+                  <svg viewBox="0 0 64 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="ray ray--1" d="M63.756 65.9807H22.756V84.9807H63.756V65.9807Z" fill="#FF7700" />
+                    <path class="ray ray--2" d="M-1.90829e-05 28.9281L13.4395 42.4384L42.1998 13.5102L28.7603 -4.65505e-05L-1.90829e-05 28.9281Z" fill="#FF7700" />
+                    <path class="ray ray--3" d="M13.4391 108.32L0.00341797 121.834L28.7699 150.752L42.2056 137.238L13.4391 108.32Z" fill="#FF7700" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="complex-tile js-animatedTile">
+            <a href="#" class="complex-tile__inner">
+              <picture class="complex-tile__picture-wrapper">
+                <source srcset="img/image-1.webp" type="image/webp">
+                <img src="img/image-1.jpg" alt="Пейзаж жилого комплекса" class="complex-tile__picture">
+              </picture>
+              <ul class="complex-tile__tags-list">
+                <li class="complex-tile__tag complex-tile__tag--date">II кв. 2019</li>
+              </ul>
+              <div class="complex-tile__info">
+                <div class="complex-tile__info-wrapper">
+                  <p class="complex-tile__info-header">ЖК «Андерсен»</p>
+                  <p class="complex-tile__info-adress">Краснодар, ул. Героев-Разведчиков, 69</p>
+                </div>
+                <p class="complex-tile__price">Квартиры от <span data-complexTileCardPice="true">2 020 000</span> ₽</p>
+                <div class="complex-tile__hover-block js-hoverBlock">
+                  <svg viewBox="0 0 64 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="ray ray--1" d="M63.756 65.9807H22.756V84.9807H63.756V65.9807Z" fill="#FF7700" />
+                    <path class="ray ray--2" d="M-1.90829e-05 28.9281L13.4395 42.4384L42.1998 13.5102L28.7603 -4.65505e-05L-1.90829e-05 28.9281Z" fill="#FF7700" />
+                    <path class="ray ray--3" d="M13.4391 108.32L0.00341797 121.834L28.7699 150.752L42.2056 137.238L13.4391 108.32Z" fill="#FF7700" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="complex-tile js-animatedTile">
+            <a href="#" class="complex-tile__inner">
+              <picture class="complex-tile__picture-wrapper">
+                <source srcset="img/image-2.webp" type="image/webp">
+                <img src="img/image-2.jpg" alt="Пейзаж жилого комплекса" class="complex-tile__picture">
+              </picture>
+              <ul class="complex-tile__tags-list">
+                <li class="complex-tile__tag complex-tile__tag--date">II кв. 2019</li>
+              </ul>
+              <div class="complex-tile__info">
+                <div class="complex-tile__info-wrapper">
+                  <p class="complex-tile__info-header">ЖК «Светлоград»</p>
+                  <p class="complex-tile__info-adress">Краснодар, ул. Колхозная, 5</p>
+                </div>
+                <p class="complex-tile__price">Квартиры от <span data-complexTileCardPice="true">2 020 000</span> ₽</p>
+                <div class="complex-tile__hover-block js-hoverBlock">
+                  <svg viewBox="0 0 64 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="ray ray--1" d="M63.756 65.9807H22.756V84.9807H63.756V65.9807Z" fill="#FF7700" />
+                    <path class="ray ray--2" d="M-1.90829e-05 28.9281L13.4395 42.4384L42.1998 13.5102L28.7603 -4.65505e-05L-1.90829e-05 28.9281Z" fill="#FF7700" />
+                    <path class="ray ray--3" d="M13.4391 108.32L0.00341797 121.834L28.7699 150.752L42.2056 137.238L13.4391 108.32Z" fill="#FF7700" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="complex-tile js-animatedTile">
+            <a href="#" class="complex-tile__inner">
+              <picture class="complex-tile__picture-wrapper">
+                <source srcset="img/image-3.webp" type="image/webp">
+                <img src="img/image-3.jpg" alt="Пейзаж жилого комплекса" class="complex-tile__picture">
+              </picture>
+              <ul class="complex-tile__tags-list">
+                <li class="complex-tile__tag complex-tile__tag--date">II кв. 2019</li>
+              </ul>
+              <div class="complex-tile__info">
+                <div class="complex-tile__info-wrapper">
+                  <p class="complex-tile__info-header">ЖК «Все свои»</p>
+                  <p class="complex-tile__info-adress">Краснодар, ул. Колхозная, 5</p>
+                </div>
+                <p class="complex-tile__price">Квартиры от <span data-complexTileCardPice="true">2 020 000</span> ₽</p>
+                <div class="complex-tile__hover-block js-hoverBlock">
+                  <svg viewBox="0 0 64 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="ray ray--1" d="M63.756 65.9807H22.756V84.9807H63.756V65.9807Z" fill="#FF7700" />
+                    <path class="ray ray--2" d="M-1.90829e-05 28.9281L13.4395 42.4384L42.1998 13.5102L28.7603 -4.65505e-05L-1.90829e-05 28.9281Z" fill="#FF7700" />
+                    <path class="ray ray--3" d="M13.4391 108.32L0.00341797 121.834L28.7699 150.752L42.2056 137.238L13.4391 108.32Z" fill="#FF7700" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="complex-tile js-animatedTile">
+            <a href="#" class="complex-tile__inner">
+              <picture class="complex-tile__picture-wrapper">
+                <source srcset="img/image-4.webp" type="image/webp">
+                <img src="img/image-4.jpg" alt="Пейзаж жилого комплекса" class="complex-tile__picture">
+              </picture>
+              <ul class="complex-tile__tags-list">
+                <li class="complex-tile__tag complex-tile__tag--date">II кв. 2019</li>
+              </ul>
+              <div class="complex-tile__info">
+                <div class="complex-tile__info-wrapper">
+                  <p class="complex-tile__info-header">ЖК «Пример длинного названия жилого комплекса, чтобы показать, как ведут себя при этом плитки»</p>
+                  <p class="complex-tile__info-adress">350000, города Краснодар, улица Длинноназванческая-Примерная, пересечение со Ставропольской, 5/8ф</p>
+                </div>
+                <p class="complex-tile__price">Квартиры от <span data-complexTileCardPice="true">2 020 000</span> ₽</p>
+                <div class="complex-tile__hover-block js-hoverBlock">
+                  <svg viewBox="0 0 64 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="ray ray--1" d="M63.756 65.9807H22.756V84.9807H63.756V65.9807Z" fill="#FF7700" />
+                    <path class="ray ray--2" d="M-1.90829e-05 28.9281L13.4395 42.4384L42.1998 13.5102L28.7603 -4.65505e-05L-1.90829e-05 28.9281Z" fill="#FF7700" />
+                    <path class="ray ray--3" d="M13.4391 108.32L0.00341797 121.834L28.7699 150.752L42.2056 137.238L13.4391 108.32Z" fill="#FF7700" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="complex-tile js-animatedTile">
+            <a href="#" class="complex-tile__inner">
+              <picture class="complex-tile__picture-wrapper">
+                <source srcset="img/image-5.webp" type="image/webp">
+                <img src="img/image-5.jpg" alt="Пейзаж жилого комплекса" class="complex-tile__picture">
+              </picture>
+              <ul class="complex-tile__tags-list">
+                <li class="complex-tile__tag complex-tile__tag--date">II кв. 2019</li>
+              </ul>
+              <div class="complex-tile__info">
+                <div class="complex-tile__info-wrapper">
+                  <p class="complex-tile__info-header">ЖК «Классика»</p>
+                  <p class="complex-tile__info-adress">Краснодар, ул. Колхозная, 5</p>
+                </div>
+                <p class="complex-tile__price">Квартиры от <span data-complexTileCardPice="true">2 020 000</span> ₽</p>
+                <div class="complex-tile__hover-block js-hoverBlock">
+                  <svg viewBox="0 0 64 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="ray ray--1" d="M63.756 65.9807H22.756V84.9807H63.756V65.9807Z" fill="#FF7700" />
+                    <path class="ray ray--2" d="M-1.90829e-05 28.9281L13.4395 42.4384L42.1998 13.5102L28.7603 -4.65505e-05L-1.90829e-05 28.9281Z" fill="#FF7700" />
+                    <path class="ray ray--3" d="M13.4391 108.32L0.00341797 121.834L28.7699 150.752L42.2056 137.238L13.4391 108.32Z" fill="#FF7700" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="swiper-container content-slider">
+          <div class="swiper-wrapper content-slider__wrapper">
+            <div class="swiper-slide content-slider__slide">
+              <picture>
+                <source srcset="img/slider-content.webp" type="image/webp">
+                <img src="img/slider-content.jpg" alt="Строительство в срок" class="content-slider__image">
+              </picture>
+              <div class="content-slider__content-wrapper">
+                <p class="content-slider__text">Все объекты сдаются 100%&nbspв срок</p>
+                <div class="button-wrapper">
+
+                  <a href="#" class="solid-btn  solid-btn--white">
+                    <span class="solid-btn__text">Показать еще</span>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide content-slider__slide">
+              <picture>
+                <source srcset="img/slider-content-2.webp" type="image/webp">
+                <img src="img/slider-content-2.jpg" alt="Строительство в срок" class="content-slider__image">
+              </picture>
+              <div class="content-slider__content-wrapper">
+                <p class="content-slider__text">Все объекты сдаются 100%&nbspв срок</p>
+                <div class="button-wrapper">
+
+                  <a href="#" class="solid-btn  solid-btn--white">
+                    <span class="solid-btn__text">Показать еще</span>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="content-wrapper">
+
+          <div class="complex-tile js-animatedTile">
+            <a href="#" class="complex-tile__inner">
+              <picture class="complex-tile__picture-wrapper">
+                <source srcset="img/image.webp" type="image/webp">
+                <img src="img/image.jpg" alt="Пейзаж жилого комплекса" class="complex-tile__picture">
+              </picture>
+              <ul class="complex-tile__tags-list">
+                <li class="complex-tile__tag complex-tile__tag--date">II кв. 2019</li>
+              </ul>
+              <div class="complex-tile__info">
+                <div class="complex-tile__info-wrapper">
+                  <p class="complex-tile__info-header">ЖК «Все свои»</p>
+                  <p class="complex-tile__info-adress">Краснодар, ул. Колхозная, 5</p>
+                </div>
+                <p class="complex-tile__price">Квартиры от <span data-complexTileCardPice="true">2 020 000</span> ₽</p>
+                <div class="complex-tile__hover-block js-hoverBlock">
+                  <svg viewBox="0 0 64 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="ray ray--1" d="M63.756 65.9807H22.756V84.9807H63.756V65.9807Z" fill="#FF7700" />
+                    <path class="ray ray--2" d="M-1.90829e-05 28.9281L13.4395 42.4384L42.1998 13.5102L28.7603 -4.65505e-05L-1.90829e-05 28.9281Z" fill="#FF7700" />
+                    <path class="ray ray--3" d="M13.4391 108.32L0.00341797 121.834L28.7699 150.752L42.2056 137.238L13.4391 108.32Z" fill="#FF7700" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="complex-tile js-animatedTile">
+            <a href="#" class="complex-tile__inner">
+              <picture class="complex-tile__picture-wrapper">
+                <source srcset="img/image-1.webp" type="image/webp">
+                <img src="img/image-1.jpg" alt="Пейзаж жилого комплекса" class="complex-tile__picture">
+              </picture>
+              <ul class="complex-tile__tags-list">
+                <li class="complex-tile__tag complex-tile__tag--date">II кв. 2019</li>
+              </ul>
+              <div class="complex-tile__info">
+                <div class="complex-tile__info-wrapper">
+                  <p class="complex-tile__info-header">ЖК «Андерсен»</p>
+                  <p class="complex-tile__info-adress">Краснодар, ул. Героев-Разведчиков, 69</p>
+                </div>
+                <p class="complex-tile__price">Квартиры от <span data-complexTileCardPice="true">2 020 000</span> ₽</p>
+                <div class="complex-tile__hover-block js-hoverBlock">
+                  <svg viewBox="0 0 64 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="ray ray--1" d="M63.756 65.9807H22.756V84.9807H63.756V65.9807Z" fill="#FF7700" />
+                    <path class="ray ray--2" d="M-1.90829e-05 28.9281L13.4395 42.4384L42.1998 13.5102L28.7603 -4.65505e-05L-1.90829e-05 28.9281Z" fill="#FF7700" />
+                    <path class="ray ray--3" d="M13.4391 108.32L0.00341797 121.834L28.7699 150.752L42.2056 137.238L13.4391 108.32Z" fill="#FF7700" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="complex-tile js-animatedTile">
+            <a href="#" class="complex-tile__inner">
+              <picture class="complex-tile__picture-wrapper">
+                <source srcset="img/image-2.webp" type="image/webp">
+                <img src="img/image-2.jpg" alt="Пейзаж жилого комплекса" class="complex-tile__picture">
+              </picture>
+              <ul class="complex-tile__tags-list">
+                <li class="complex-tile__tag complex-tile__tag--date">II кв. 2019</li>
+              </ul>
+              <div class="complex-tile__info">
+                <div class="complex-tile__info-wrapper">
+                  <p class="complex-tile__info-header">ЖК «Светлоград»</p>
+                  <p class="complex-tile__info-adress">Краснодар, ул. Колхозная, 5</p>
+                </div>
+                <p class="complex-tile__price">Квартиры от <span data-complexTileCardPice="true">2 020 000</span> ₽</p>
+                <div class="complex-tile__hover-block js-hoverBlock">
+                  <svg viewBox="0 0 64 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="ray ray--1" d="M63.756 65.9807H22.756V84.9807H63.756V65.9807Z" fill="#FF7700" />
+                    <path class="ray ray--2" d="M-1.90829e-05 28.9281L13.4395 42.4384L42.1998 13.5102L28.7603 -4.65505e-05L-1.90829e-05 28.9281Z" fill="#FF7700" />
+                    <path class="ray ray--3" d="M13.4391 108.32L0.00341797 121.834L28.7699 150.752L42.2056 137.238L13.4391 108.32Z" fill="#FF7700" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="complex-tile js-animatedTile">
+            <a href="#" class="complex-tile__inner">
+              <picture class="complex-tile__picture-wrapper">
+                <source srcset="img/image-3.webp" type="image/webp">
+                <img src="img/image-3.jpg" alt="Пейзаж жилого комплекса" class="complex-tile__picture">
+              </picture>
+              <ul class="complex-tile__tags-list">
+                <li class="complex-tile__tag complex-tile__tag--date">II кв. 2019</li>
+              </ul>
+              <div class="complex-tile__info">
+                <div class="complex-tile__info-wrapper">
+                  <p class="complex-tile__info-header">ЖК «Все свои»</p>
+                  <p class="complex-tile__info-adress">Краснодар, ул. Колхозная, 5</p>
+                </div>
+                <p class="complex-tile__price">Квартиры от <span data-complexTileCardPice="true">2 020 000</span> ₽</p>
+                <div class="complex-tile__hover-block js-hoverBlock">
+                  <svg viewBox="0 0 64 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="ray ray--1" d="M63.756 65.9807H22.756V84.9807H63.756V65.9807Z" fill="#FF7700" />
+                    <path class="ray ray--2" d="M-1.90829e-05 28.9281L13.4395 42.4384L42.1998 13.5102L28.7603 -4.65505e-05L-1.90829e-05 28.9281Z" fill="#FF7700" />
+                    <path class="ray ray--3" d="M13.4391 108.32L0.00341797 121.834L28.7699 150.752L42.2056 137.238L13.4391 108.32Z" fill="#FF7700" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="complex-tile js-animatedTile">
+            <a href="#" class="complex-tile__inner">
+              <picture class="complex-tile__picture-wrapper">
+                <source srcset="img/image-4.webp" type="image/webp">
+                <img src="img/image-4.jpg" alt="Пейзаж жилого комплекса" class="complex-tile__picture">
+              </picture>
+              <ul class="complex-tile__tags-list">
+                <li class="complex-tile__tag complex-tile__tag--date">II кв. 2019</li>
+              </ul>
+              <div class="complex-tile__info">
+                <div class="complex-tile__info-wrapper">
+                  <p class="complex-tile__info-header">ЖК «Пример длинного названия жилого комплекса, чтобы показать, как ведут себя при этом плитки»</p>
+                  <p class="complex-tile__info-adress">350000, города Краснодар, улица Длинноназванческая-Примерная, пересечение со Ставропольской, 5/8ф</p>
+                </div>
+                <p class="complex-tile__price">Квартиры от <span data-complexTileCardPice="true">2 020 000</span> ₽</p>
+                <div class="complex-tile__hover-block js-hoverBlock">
+                  <svg viewBox="0 0 64 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="ray ray--1" d="M63.756 65.9807H22.756V84.9807H63.756V65.9807Z" fill="#FF7700" />
+                    <path class="ray ray--2" d="M-1.90829e-05 28.9281L13.4395 42.4384L42.1998 13.5102L28.7603 -4.65505e-05L-1.90829e-05 28.9281Z" fill="#FF7700" />
+                    <path class="ray ray--3" d="M13.4391 108.32L0.00341797 121.834L28.7699 150.752L42.2056 137.238L13.4391 108.32Z" fill="#FF7700" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="complex-tile js-animatedTile">
+            <a href="#" class="complex-tile__inner">
+              <picture class="complex-tile__picture-wrapper">
+                <source srcset="img/image-5.webp" type="image/webp">
+                <img src="img/image-5.jpg" alt="Пейзаж жилого комплекса" class="complex-tile__picture">
+              </picture>
+              <ul class="complex-tile__tags-list">
+                <li class="complex-tile__tag complex-tile__tag--date">II кв. 2019</li>
+              </ul>
+              <div class="complex-tile__info">
+                <div class="complex-tile__info-wrapper">
+                  <p class="complex-tile__info-header">ЖК «Классика»</p>
+                  <p class="complex-tile__info-adress">Краснодар, ул. Колхозная, 5</p>
+                </div>
+                <p class="complex-tile__price">Квартиры от <span data-complexTileCardPice="true">2 020 000</span> ₽</p>
+                <div class="complex-tile__hover-block js-hoverBlock">
+                  <svg viewBox="0 0 64 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="ray ray--1" d="M63.756 65.9807H22.756V84.9807H63.756V65.9807Z" fill="#FF7700" />
+                    <path class="ray ray--2" d="M-1.90829e-05 28.9281L13.4395 42.4384L42.1998 13.5102L28.7603 -4.65505e-05L-1.90829e-05 28.9281Z" fill="#FF7700" />
+                    <path class="ray ray--3" d="M13.4391 108.32L0.00341797 121.834L28.7699 150.752L42.2056 137.238L13.4391 108.32Z" fill="#FF7700" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="button-wrapper button-wrapper--center">
+
+          <a href="#" class="solid-btn  ">
+            <span class="solid-btn__text">Показать еще</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="mortgage-calculator">
+          <picture class="mortgage-calculator__back">
+            <source srcset="img/mortgage-back.webp" type="image/webp">
+            <img src="img/mortgage-back.jpg" alt="Предложение ипотеки в ЖК «Светлые ручьи»" class="mortgage-calculator__image">
+          </picture>
+          <form class="mortgage-calculator__calc">
+            <div class="mortgage-calculator__calc-inner">
+              <h2 class="mortgage-calculator__title">Калькулятор ипотеки</h2>
+
+              <div class="text-field ">
+                <label for="flat-price" class="text-field__label ">Стоимость квартиры:</label>
+                <input type="text" name="flat-price" id="flat-price" value="" placeholder="от 2 590 000 ₽" class="text-field__input">
+              </div>
+
+              <div class="text-field">
+                <label for="first-payment" class="text-field__label">Первый взнос</label>
+                <input type="text" name="first-payment" id="first-payment" value="" placeholder="Укажите сумму" class="text-field__input">
+                <div id="firstPaymentSlider" class="range-slider"></div>
+              </div>
+
+              <div class="text-field text-field--half">
+                <label for="credit-years" class="text-field__label ">На срок:</label>
+                <input type="text" name="credit-years" id="credit-years" value="" placeholder="до 20 лет" class="text-field__input">
+              </div>
+
+            </div>
+            <div class="mortgage-calculator__calc-inner mortgage-calculator__calc-inner--grey">
+
+              <div class="text-field-text text-field-text--half">
+                <input type="text" name="user-name" id="user-name" value="" placeholder="Ваше имя" class="text-field-text__input" data-calcValid="true" data-="true">
+              </div>
+
+
+              <div class="text-field-text text-field-text--half">
+                <input type="text" name="user-phone" id="user-phone" value="" placeholder="Ваш телефон" class="text-field-text__input" data-calcValid="true" data-phonemask="true">
+              </div>
+
+              <div class="mortgage-calculator__agreement-wrapper">
+                <div class="checkbox">
+                  <input type="checkbox" name="checkbox" id="checkbox" class="checkbox__input">
+                  <label for="checkbox" class="checkbox__label">
+                    <span>Я выражаю согласие с <a href="#" class="checkbox__label--link">Политикой конфиденциальности</a> </span>
+                  </label>
+                </div>
+              </div>
+              <div class="mortgage-calculator__button-wrapper">
+                <button class="solid-btn solid-btn--fullwidth" data-valid-button="true" disabled>
+                  <span class="solid-btn__text">Получить расчет ежемесячного платежа по ипотеке</span>
+                </button>
+              </div>
+            </div>
+          </form>
+          <a href="#" class="mortgage-calculator__informer">
+            <p class="mortgage-calculator__informer-text">ЖК «Светлые ручьи»</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="title-wrapper">
+          <h2>Видео</h2>
+
+          <div class="button-wrapper">
+            <a href="#" class="ghost-icon-button">
+              <object data="img/service-icons.svg#more" type="image/svg+xml" class="ghost-icon-button__icon"></object>
+              <span class="ghost-icon-button__text">Все видео</span>
+            </a>
+          </div>
+
+        </div>
+        <div class="content-wrapper">
+
+          <div class="video">
+            <a href="#" class="video__inner-wrapper">
+              <picture class="video__picture">
+                <source srcset="img/vid1.webp" type="image/webp">
+                <img src="img/vid1.jpg" alt="Спортивная площадка" class="video__image">
+              </picture>
+              <div class="video__darkener"></div>
+              <p class="video__title">Спортивная площадка</p>
+              <div class="video__info-wrapper">
+                <div>
+                  <p class="video__tag">ЖК «Андерсен»</p>
+                </div>
+                <div class="video__play-icon"></div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="video">
+            <a href="#" class="video__inner-wrapper">
+              <picture class="video__picture">
+                <source srcset="img/vid2.webp" type="image/webp">
+                <img src="img/vid2.jpg" alt="Спортивная площадка" class="video__image">
+              </picture>
+              <div class="video__darkener"></div>
+              <p class="video__title">Открытый бассейн</p>
+              <div class="video__info-wrapper">
+                <div>
+                  <p class="video__tag">ЖК «Андерсен»</p>
+                </div>
+                <div class="video__play-icon"></div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="video">
+            <a href="#" class="video__inner-wrapper">
+              <picture class="video__picture">
+                <source srcset="img/vid3.webp" type="image/webp">
+                <img src="img/vid3.jpg" alt="Спортивная площадка" class="video__image">
+              </picture>
+              <div class="video__darkener"></div>
+              <p class="video__title">Подземный паркинг</p>
+              <div class="video__info-wrapper">
+                <div>
+                  <p class="video__tag">ЖК «Андерсен»</p>
+                </div>
+                <div class="video__play-icon"></div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="title-wrapper">
+          <h2>Новости и события</h2>
+
+          <div class="button-wrapper">
+            <a href="#" class="ghost-icon-button">
+              <object data="img/service-icons.svg#more" type="image/svg+xml" class="ghost-icon-button__icon"></object>
+              <span class="ghost-icon-button__text">Все новости</span>
+            </a>
+          </div>
+
+        </div>
+        <div class="content-wrapper content-wrapper--bottom-offset">
+
+          <div class="news-tile">
+            <a href="#" class="news-tile__inner-wrapper">
+              <picture class="news-tile__picture ">
+                <source srcset="img/new1.webp" type="image/webp">
+                <img src="img/new1.jpg" alt="ЖК «Андерсен»" class="news-tile__image">
+              </picture>
+              <div class="news-tile__info-wrapper">
+                <p class="news-tile__info-title">Старт продаж в новом ЖК «Московский»</p>
+                <p class="news-tile__info-date">Вчера 16:11</p>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="news-tile">
+            <a href="#" class="news-tile__inner-wrapper">
+              <picture class="news-tile__picture ">
+                <source srcset="img/new2.webp" type="image/webp">
+                <img src="img/new2.jpg" alt="ЖК «Андерсен»" class="news-tile__image">
+              </picture>
+              <div class="news-tile__info-wrapper">
+                <p class="news-tile__info-title">Новые ипотечные программы от банка ВТБ</p>
+                <p class="news-tile__info-date">Вчера 16:11</p>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="news-tile">
+            <a href="#" class="news-tile__inner-wrapper">
+              <picture class="news-tile__picture ">
+                <source srcset="img/new3.webp" type="image/webp">
+                <img src="img/new3.jpg" alt="ЖК «Андерсен»" class="news-tile__image">
+              </picture>
+              <div class="news-tile__info-wrapper">
+                <p class="news-tile__info-title">Самые популярные планировки 2019 года, а также новые модные интерьерные тренды 2020 года</p>
+                <p class="news-tile__info-date">Вчера 16:11</p>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="news-tile">
+            <a href="#" class="news-tile__inner-wrapper">
+              <picture class="news-tile__picture news-tile__picture--hidden">
+                <source srcset="img/new1.webp" type="image/webp">
+                <img src="img/new1.jpg" alt="ЖК «Андерсен»" class="news-tile__image">
+              </picture>
+              <div class="news-tile__info-wrapper">
+                <p class="news-tile__info-title">Рынок недвижимости резко пошел вниз. Что грядет?</p>
+                <p class="news-tile__info-date">Вчера 16:11</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content-wrapper">
+          <div class="footer__block">
+            <ul class="footer__links-list">
+              <li class="footer__links-item"><a href="#" class="footer__link">О компании</a>
+                <ul class="footer__links-list--submenu">
+                  <li class="footer__links-item footer__links-item--submenu"><a href="#" class="footer__link footer__link--submenu">Вакансии</a></li>
+                  <li class="footer__links-item footer__links-item--submenu"><a href="#" class="footer__link footer__link--submenu">Команда</a></li>
+                </ul>
+              </li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Новости</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Документы</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Фото</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Видео</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Сделанные проекты</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__block footer__block--half">
+            <ul class="footer__links-list">
+              <li class="footer__links-item"><a href="#" class="footer__link">Акции</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Новостройки</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Машиноместа</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Кладовые помещения</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Коммерция</a></li>
+            </ul>
+            <ul class="footer__social-list">
+              <li class="footer__social-list-item"><a href="#" class="footer__social-link"><object data="img/socials.svg#instagram" type="image/svg+xml" class="footer__social-icon"></object></a></li>
+              <li class="footer__social-list-item"><a href="#" class="footer__social-link"><object data="img/socials.svg#facebook" type="image/svg+xml" class="footer__social-icon"></object></a></li>
+              <li class="footer__social-list-item"><a href="#" class="footer__social-link"><object data="img/socials.svg#youtube" type="image/svg+xml" class="footer__social-icon"></object></a></li>
+              <li class="footer__social-list-item"><a href="#" class="footer__social-link"><object data="img/socials.svg#vk" type="image/svg+xml" class="footer__social-icon"></object></a></li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <div class="footer__wrapper">
+              <a href="tel:88612055084" class="footer__link">8 (861) 205-50-84</a>
+              <p class="footer__text">г. Краснодар, ул. им. Воровского, д. 172<br>Пн.-Пт.: с 09:00 до 18:00</p>
+              <a href="mailto:info@family-yug.ru" class="footer__link footer__link--standalone">info@family-yug.ru</a>
+
+              <div class="button-wrapper">
+                <a href="#" class="ghost-icon-button">
+                  <object data="img/service-icons.svg#message" type="image/svg+xml" class="ghost-icon-button__icon"></object>
+                  <span class="ghost-icon-button__text">Написать сообщение</span>
+                </a>
+              </div>
+
+            </div>
+            <p class="footer__text"><a href="#" class="footer__link">Создание сайта</a> — Very Good</p>
+          </div>
+        </div>
+        <div class="footer__low">
+          <p class="footer__text footer__text--annotation">© 2019 ООО «Семья». Строительная компания</p>
+          <a href="#" class="footer__link">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    let mortgageCalc = {
+      defaultFlatPrice: 2590000,
+      defaultCreditPeriod: 20
+    }
+  </script>
+
+
+
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/nouislider.min.js"></script>
+  <script src="js/imask.min.js"></script>
+  <script src="js/wheel-zoom.min.js"></script>
+  <script src="js/DModal.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

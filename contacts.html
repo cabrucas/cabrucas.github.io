@@ -1,203 +1,308 @@
 <!DOCTYPE html>
-<html lang="ru-Ru">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Mirogroup Контакты</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;family=Jura:wght@300;700&amp;display=swap">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/sal.css">
-    <link rel="stylesheet" href="css/choices.min.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/media.css">
-  </head>
-  <body>
-    <!--регионы-->
-    <header>
-      <div class="menu-container">
-        <div class="menu-wrapper"><a class="logo-link" href="index.html">
-            <picture class="logo-wrapper">
-              <source media="(max-width: 1920px)" srcset="img/logo.webp"><img class="logo-mrg" src="img/logo.png" alt="Логотип Мирогрупп">
-            </picture></a>
-          <div class="burger" id="burgerMenu">
-            <div class="burger__menu" id="burgerMenuStripes"></div>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <style>
+    .ymaps-2-1-77-ground-pane {
+      -webkit-filter: grayscale(100%);
+    }
+  </style>
+
+
+  <title>Контактная информация</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper-bundle.css">
+  <link rel="stylesheet" href="css/nouislider.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <main>
+
+    <header class="header js-hide">
+      <section class="header__section header__section--upper">
+        <div class="container">
+          <div class="header__section-content-wrapper">
+            <ul class="header__upper-menu-list">
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link header__upper-menu-link--list">О компании</a>
+                <div class="header__submenu">
+                  <ul class="header__upper-submenu-list">
+                    <li class="header__upper-submenu-item">
+                      <a href="#" class="header__upper-submenu-link">Вакансии</a>
+                    </li>
+                    <li class="header__upper-submenu-item">
+                      <a href="#" class="header__upper-submenu-link">Команда</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link">Новости</a>
+              </li>
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link">Фото</a>
+              </li>
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link">Видео</a>
+              </li>
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link">Сданные проекты</a>
+              </li>
+              <li class="header__upper-menu-item">
+                <a href="#" class="header__upper-menu-link">Контакты</a>
+              </li>
+            </ul>
+            <div class="header__button-wrapper">
+              <button class="header-btn">
+                <span>Заказать звонок</span>
+              </button>
+            </div>
           </div>
-          <ul class="nav">
-            <li class="nav__item"><a class="nav__link nav__link--active" href="price.html">Прайс-лист</a></li>
-            <li class="nav__item"><a class="nav__link" href="partners.html">Поставщикам</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Авансирование</a></li>
-            <li class="nav__item"><a class="nav__link" href="about.html">О компании</a></li>
-            <li class="nav__item"><a class="nav__link" href="career.html">Вакансии</a></li>
-            <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+        </div>
+      </section>
+      <section class="header__section header__section--main">
+        <div class="container container--fullheight">
+          <div class="header__section-content-wrapper">
+            <div class="header__element-wrapper">
+              <object data="img/SKlogo.svg" type="image/svg+xml" class="header__logo"></object>
+              <a href="main.html" class="header__logo-link"></a>
+            </div>
+            <nav class="header__navigation-menu">
+              <ul class="header__main-menu">
+                <li class="header__main-menu-item header__main-menu-item--active"><a href="#" class="header__main-menu-link">Акции</a></li>
+                <li class="header__main-menu-item"><a href="#" class="header__main-menu-link">Новостройки</a></li>
+                <li class="header__main-menu-item"><a href="#" class="header__main-menu-link">Машиноместа</a></li>
+                <li class="header__main-menu-item"><a href="#" class="header__main-menu-link">Кладовые помещения</a></li>
+                <li class="header__main-menu-item"><a href="#" class="header__main-menu-link">Коммерция</a></li>
+              </ul>
+              <button class="header__mobile-menu" data-open="mobileMenu">
+                <span></span>
+              </button>
+            </nav>
+            <div class="header__element-wrapper header__element-wrapper--reversed">
+              <a href="tel:+78612055084" class="header__phone">+7 (861) 205-50-84</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="mob-dropper">
+      <div class="mob-dropper__darkener" data-close="true"></div>
+      <div class="mob-dropper__menu">
+        <div class="mob-dropper__inner-wrapper">
+          <ul class="mob-dropper__menu-list">
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Акции</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Новостройки</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Машиноместа</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Кладовые помещения</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Коммерция</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">О компании</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Новости</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Документы</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Фото</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Видео</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Сданные проекты</a></li>
+            <li class="mob-dropper__menu-list-item"><a href="#" class="mob-dropper__menu-link">Контакты</a></li>
           </ul>
         </div>
-        <div class="menu-tools"><a class="menu-tools__link" href="#">
-            <div class="menu-tools__icon">   <img src="img/sprite.svg#globe" alt="Глобус"></div>
-            <div class="menu-tools__text-wrapper">
-              <p class="menu-tools__label">Switch to:</p>
-              <p class="menu-tools__text">English</p>
-            </div></a><a class="menu-tools__link" href="#">
-            <div class="menu-tools__icon">   <img src="img/sprite.svg#account" alt="Аккаунт"></div>
-            <div class="menu-tools__text-wrapper">
-              <p class="menu-tools__label">Вход и регистрация</p>
-              <p class="menu-tools__text">Личный кабинет</p>
-            </div></a></div>
       </div>
-    </header>
-    <section class="dropper" id="dropperSection">
-      <div class="light" id="dropper-darkener"></div>
-      <div class="dropper__container" id="dropperPart">
-        <div class="menu-tools"><a class="menu-tools__link" href="#">
-            <div class="menu-tools__icon">   <img src="img/sprite.svg#globe" alt="Глобус"></div>
-            <div class="menu-tools__text-wrapper">
-              <p class="menu-tools__label">Switch to:</p>
-              <p class="menu-tools__text">English</p>
-            </div></a><a class="menu-tools__link" href="#">
-            <div class="menu-tools__icon">   <img src="img/sprite.svg#account" alt="Аккаунт"></div>
-            <div class="menu-tools__text-wrapper">
-              <p class="menu-tools__label">Вход и регистрация</p>
-              <p class="menu-tools__text">Личный кабинет</p>
-            </div></a></div>
-      </div>
+      <button class="mob-dropper__close" data-close="true">&times</button>
+
     </section>
-    <section class="hero">
-      <div class="container">
-        <div class="page-header">
-          <div class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li><a class="breadcrumbs__item" href="#">Главная</a></li>
-              <li><a class="breadcrumbs__item breadcrumbs__inactive-item" href="#">Контакты</a></li>
+    <section>
+      <div class="content-wrapper content-wrapper--full">
+        <div class="content-wrapper content-wrapper--half-right-offset">
+          <div class="container container--half">
+            <ul class="breadcrumbs breadcrumbs--offset-top">
+              <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Контакты</a></li>
             </ul>
-          </div>
-          <h1 class="page-title">Контактная информация
-            <div class="scrollr"><img class="mouse" src="img/sprite.svg#mouse" alt="">
-              <p class="text">Скрольте<br>вниз</p>
+            <h1 class="title">Контактная информация</h1>
+            <div class="map-tabs">
+              <div class="map-tabs__btn-wrapper">
+                <a href="#" class="map-tabs__tab-link js-tabBtn js-tabBtn--active" data-city="krd">Краснодар</a>
+                <a href="#" class="map-tabs__tab-link js-tabBtn" data-city="nvrsk">Новороссийск</a>
+              </div>
+              <div class="map-tabs__content-wrapper">
+                <div class="map-tabs__content js-tabContent js-tabContent--active">
+                  <div class="map-tabs__content-block map-tabs__content-block--bottom-offset">
+                    <div class="map-tabs__block-a">
+                      <a href="tel:88000000000" class="map-tabs__main-phone">8-800-000-00-00</a>
+                      <p class="map-tabs__main-phone--disclaimer">По всем вопросам с 09:00 до 18:00 без перерыва и выходных</p>
+                    </div>
+                    <div class="map-tabs__block-b">
+                      <p class="map-tabs__block-b-title">Центральный офис</p>
+                      <p class="map-tabs__block-b-text">8 (861) 205-50-84</p>
+                      <a href="mailto:1@1.ru" class="map-tabs__block-b-link">info@family.ru</a>
+                      <p class="map-tabs__block-b-text map-tabs__block-b-text--address">ул. им. Воровского, 172</p>
+                    </div>
+                    <div class="map-tabs__block-b">
+                      <p class="map-tabs__block-b-title">Офис продаж</p>
+                      <p class="map-tabs__block-b-text">8 (861) 205-50-84</p>
+                      <a href="mailto:1@1.ru" class="map-tabs__block-b-link">info@family.ru</a>
+                      <p class="map-tabs__block-b-text map-tabs__block-b-text--address">ул. им. Воровского, 172</p>
+                    </div>
+                  </div>
+                  <div class="map-tabs__informer map-tabs__informer--bottom-offset">
+                    <picture class="map-tabs__informer-illustration-wrapper">
+                      <source srcset="img/contacts-ill.webp" type="image/webp">
+                      <img src="img/contacts-ill.jpg" alt="ЖК" class="map-tabs__informer-illustration">
+                    </picture>
+                    <p class="map-tabs__informer-text map-tabs__informer-text--bottom-offset">У вас есть вопросы? Напишите нам</p>
+                    <div class="button-wrapper">
+
+                      <a href="#" class="solid-btn  ">
+                        <span class="solid-btn__text">Обратная связь</span>
+                      </a>
+
+                    </div>
+                  </div>
+                  <div class="map-tabs__content-block">
+                    <div class="map-tabs__block-b">
+                      <p class="map-tabs__block-b-title">Пресс-служба</p>
+                      <p class="map-tabs__block-b-text">8 (861) 205-50-84</p>
+                      <a href="mailto:1@1.ru" class="map-tabs__block-b-link">info@family.ru</a>
+                      <p class="map-tabs__block-b-text map-tabs__block-b-text--address">ул. им. Воровского, 172</p>
+                    </div>
+                    <div class="map-tabs__block-b">
+                      <p class="map-tabs__block-b-title">Отдел маркетинга и рекламы</p>
+                      <p class="map-tabs__block-b-text">8 (861) 205-50-84</p>
+                      <a href="mailto:1@1.ru" class="map-tabs__block-b-link">info@family.ru</a>
+                      <p class="map-tabs__block-b-text map-tabs__block-b-text--address">ул. им. Воровского, 172</p>
+                    </div>
+                    <div class="map-tabs__block-b">
+                      <p class="map-tabs__block-b-title">Отдел кадров</p>
+                      <p class="map-tabs__block-b-text">8 (861) 205-50-84</p>
+                      <a href="mailto:1@1.ru" class="map-tabs__block-b-link">info@family.ru</a>
+                      <p class="map-tabs__block-b-text map-tabs__block-b-text--address">ул. им. Воровского, 172</p>
+                    </div>
+                    <div class="map-tabs__block-b">
+                      <p class="map-tabs__block-b-title">Отдел снабжения</p>
+                      <p class="map-tabs__block-b-text">8 (861) 205-50-84</p>
+                      <a href="mailto:1@1.ru" class="map-tabs__block-b-link">info@family.ru</a>
+                      <p class="map-tabs__block-b-text map-tabs__block-b-text--address">ул. им. Воровского, 172</p>
+                    </div>
+                    <div class="map-tabs__block-b">
+                      <p class="map-tabs__block-b-title">Отдел сопровождения клиентов</p>
+                      <p class="map-tabs__block-b-text">8 (861) 205-50-84</p>
+                      <a href="mailto:1@1.ru" class="map-tabs__block-b-link">info@family.ru</a>
+                      <p class="map-tabs__block-b-text map-tabs__block-b-text--address">ул. им. Воровского, 172</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="map-tabs__content js-tabContent">
+                  <div class="map-tabs__content-block map-tabs__content-block--bottom-offset">
+                    <div class="map-tabs__block-a">
+                      <a href="tel:88000000000" class="map-tabs__main-phone">8-800-000-00-00</a>
+                      <p class="map-tabs__main-phone--disclaimer">По всем вопросам с 09:00 до 18:00 без перерыва и выходных</p>
+                    </div>
+                    <div class="map-tabs__block-b">
+                      <p class="map-tabs__block-b-title">Центральный офис</p>
+                      <p class="map-tabs__block-b-text">8 (861) 205-50-84</p>
+                      <a href="mailto:1@1.ru" class="map-tabs__block-b-link">info@family.ru</a>
+                      <p class="map-tabs__block-b-text map-tabs__block-b-text--address">ул. Котанова, 6</p>
+                    </div>
+                  </div>
+                  <div class="map-tabs__informer">
+                    <picture class="map-tabs__informer-illustration-wrapper">
+                      <source srcset="img/contacts-ill.webp" type="image/webp">
+                      <img src="img/contacts-ill.jpg" alt="ЖК" class="map-tabs__informer-illustration">
+                    </picture>
+                    <p class="map-tabs__informer-text map-tabs__informer-text--bottom-offset">У вас есть вопросы? Напишите нам</p>
+                    <div class="button-wrapper">
+
+                      <a href="#" class="solid-btn  ">
+                        <span class="solid-btn__text">Обратная связь</span>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </h1>
-          <div class="page-header__illustration"><img src="img/illustrations/grains.svg" alt=""></div>
-          <div class="page-header__info">
-            <p class="plain">ООО "Мирогрупп Ресурсы" 350049, Краснодарский край, Краснодар г, Красных Партизан ул, дом № 200, оф. эт/пом 6.7/81.87</p>
-            <p class="plain">тел.: 8 (861) 279-20-78,<br>факс: 8 (861) 298-08-38 <br> <a class="plain__phone" href="mailto:info@mgresources.ru">info@mgresources.ru</a></p>
-            <button class="ghost-button" type="button" onclick="window.open('https://goo.gl/maps/PTkLibdZe84sQQKf9')"><span>Показать на карте</span></button>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="departments">
-      <div class="container">
-        <picture class="departments-set__illustration">
-          <source media="(min-width: 960px)" srcset="img/train-1920.webp">
-          <source media="(min-width: 319px)" srcset="img/train-960.webp"><img class="rellax" src="img/train.jpg" data-rellax-speed="-2">
-        </picture>
-        <div class="departments-set">
-          <div class="departments-set__inner">
-            <div class="department">
-              <div class="department__title">
-                <p class="smalltext smalltext--department">Обособленное подразделение</p>
-                <p class="department__name">«Ставропольское»</p>
-              </div>
-              <div class="department__info">
-                <p class="department__address">+7&nbsp(8652)&nbsp33-00-47<br>355042, Ставропольский край, г. Ставрополь, ул. Доваторцев, д. 61</p>
-                <button class="solid-button-white solid-button-white--departments" tybe="button" onclick="window.open('https://goo.gl/maps/JrVJ3DutM9usb4KPA')"><span>Показать на карте</span></button>
-              </div>
-            </div>
-            <div class="department">
-              <div class="department__title">
-                <p class="smalltext smalltext--department">Обособленное подразделение</p>
-                <p class="department__name">«Воронежское»</p>
-              </div>
-              <div class="department__info">
-                <p class="department__address">+7&nbsp(473)&nbsp260-60-76<br>394068, Воронеж г., Олимпийский б-р, дом № 6</p>
-                <button class="solid-button-white solid-button-white--departments" type="button" onclick="window.open('https://goo.gl/maps/iuobMbY6xhgUzfVn6')"><span>Показать на карте</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pattern"></div>
-      </div>
-    </section>
-    <section class="contacts-form">
-      <div class="container">
-        <picture class="contacts-form__illustration">
-          <source media="(min-width: 319px)" srcset="img/aerial-field-1920.webp"><img class="rellax" src="img/aerial-field-1920.jpg" data-rellax-speed="-2">
-        </picture>
-        <p class="contacts-form__title">Обратная связь</p>
-        <div class="form-write">
-          <form class="form-write__form" action="#">
-            <div class="form-write__inputs-wrapper">
-              <div class="text-field text-field--half">
-                <input type="text" placeholder=" " name="user" id="form-write-a">
-                <label class="text-field__label" for="form-write-a"><span class="text-field__label--text">ФИО</span></label>
-              </div>
-              <div class="text-field text-field--half">
-                <input type="text" placeholder=" " name="email" id="form-write-b">
-                <label class="text-field__label" for="form-write-b"><span class="text-field__label--text">Email</span></label>
-              </div>
-            </div>
-            <div class="textarea-field">
-              <textarea name="comment" rows="5" placeholder=" " id="form-write-c"></textarea>
-              <label class="textarea-field__label" for="form-write-c"><span class="textarea-field__label--text">Ваш комментарий</span></label>
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" name="agree-check" id="form-write-agreement">
-              <label class="checkbox__label smalltext" for="form-write-agreement">Я выражаю свое согласие с <a class="smalltext--link-intext" href="#">Политикой конфиденциальности</a> сайта и даю разрешение на обработку своих персональных данных</label>
-            </div>
-            <div class="form-write__button-wrapper">
-              <button class="solid-button" type="submit" disabled><span>Отправить</span></button>
-            </div>
-          </form>
+        <div class="content-wrapper content-wrapper--half-right-offset content-wrapper--padding-left ">
+          <div class="js-contacts-map" id="jsContactsMap"></div>
         </div>
       </div>
     </section>
     <footer class="footer">
       <div class="container">
-        <div class="footer__info">
-          <div class="footer__logos-wrapper"><a class="footer__logo" href="index.html"><img src="img/mirogroup-logo.jpg" alt=""></a><a class="footer__logo" href="#"><img class="footer__logo" src="img/vtb-group-logo.jpg" alt=""></a></div>
-          <p class="smalltext">ООО «Мирогрупп Ресурсы»<br>350049, Краснодарский край, Краснодар г, Красных Партизан ул, дом № 200, оф. эт/пом 6.7/81.87<br><span><a class="smalltext--link" href="mailto:info@mgresources.ru">info@mgresources.ru</a></span></p>
-        </div>
-        <div class="footer__content">
-          <div class="footer__menu">
-            <div class="footer__links">
-              <ul class="footer__links-a">
-                <li><a href="price.html">Прайс-лист</a></li>
-                <li><a href="partners.html">Поставщикам</a></li>
-                <li><a href="#">Авансирование</a></li>
-              </ul>
-              <ul class="footer__links-b">
-                <li><a href="about.html">О компании</a></li>
-                <li><a href="career.html">Вакансии</a></li>
-              </ul>
-              <ul class="footer__links-c">
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Личный кабинет</a></li>
-              </ul>
-              <div class="footer__lang">
-                <div class="menu-tools"><a class="menu-tools__link" href="#">
-                    <div class="menu-tools__icon">   <img src="img/sprite.svg#globe" alt=""></div>
-                    <div class="menu-tools__text-wrapper">
-                      <p class="menu-tools__label">Switch to:</p>
-                      <p class="menu-tools__text">English</p>
-                    </div></a></div>
+        <div class="footer__content-wrapper">
+          <div class="footer__block">
+            <ul class="footer__links-list">
+              <li class="footer__links-item"><a href="#" class="footer__link">О компании</a>
+                <ul class="footer__links-list--submenu">
+                  <li class="footer__links-item footer__links-item--submenu"><a href="#" class="footer__link footer__link--submenu">Вакансии</a></li>
+                  <li class="footer__links-item footer__links-item--submenu"><a href="#" class="footer__link footer__link--submenu">Команда</a></li>
+                </ul>
+              </li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Новости</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Документы</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Фото</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Видео</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Сделанные проекты</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__block footer__block--half">
+            <ul class="footer__links-list">
+              <li class="footer__links-item"><a href="#" class="footer__link">Акции</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Новостройки</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Машиноместа</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Кладовые помещения</a></li>
+              <li class="footer__links-item"><a href="#" class="footer__link">Коммерция</a></li>
+            </ul>
+            <ul class="footer__social-list">
+              <li class="footer__social-list-item"><a href="#" class="footer__social-link"><object data="img/socials.svg#instagram" type="image/svg+xml" class="footer__social-icon"></object></a></li>
+              <li class="footer__social-list-item"><a href="#" class="footer__social-link"><object data="img/socials.svg#facebook" type="image/svg+xml" class="footer__social-icon"></object></a></li>
+              <li class="footer__social-list-item"><a href="#" class="footer__social-link"><object data="img/socials.svg#youtube" type="image/svg+xml" class="footer__social-icon"></object></a></li>
+              <li class="footer__social-list-item"><a href="#" class="footer__social-link"><object data="img/socials.svg#vk" type="image/svg+xml" class="footer__social-icon"></object></a></li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <div class="footer__wrapper">
+              <a href="tel:88612055084" class="footer__link">8 (861) 205-50-84</a>
+              <p class="footer__text">г. Краснодар, ул. им. Воровского, д. 172<br>Пн.-Пт.: с 09:00 до 18:00</p>
+              <a href="mailto:info@family-yug.ru" class="footer__link footer__link--standalone">info@family-yug.ru</a>
+
+              <div class="button-wrapper">
+                <a href="#" class="ghost-icon-button">
+                  <object data="img/service-icons.svg#message" type="image/svg+xml" class="ghost-icon-button__icon"></object>
+                  <span class="ghost-icon-button__text">Написать сообщение</span>
+                </a>
               </div>
+
             </div>
+            <p class="footer__text"><a href="#" class="footer__link">Создание сайта</a> — Very Good</p>
           </div>
-          <div class="footer__service">
-            <div class="footer__disclaimer">
-              <p class="smalltext">© ООО «Мирогрупп Ресурсы», 2020</p><a class="smalltext smalltext--link" href="#">Политика конфиденциальности</a>
-            </div>
-            <div class="footer__phone">
-              <p class="smalltext">По всем вопросам</p><a class="smalltext smalltext--phone" href="tel:8(861)279-20-78">8 (861) 279-20-78</a>
-            </div>
-          </div>
+        </div>
+        <div class="footer__low">
+          <p class="footer__text footer__text--annotation">© 2019 ООО «Семья». Строительная компания</p>
+          <a href="#" class="footer__link">Политика конфиденциальности</a>
         </div>
       </div>
     </footer>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/sal.js"></script>
-    <script src="js/rellax.min.js"></script>
-    <script src="js/SmoothScroll.min.js"></script>
-    <script src="js/TabConstructor.js"></script>
-    <script src="js/choices.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+
+  </main>
+
+
+
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/nouislider.min.js"></script>
+  <script src="js/imask.min.js"></script>
+  <script src="js/wheel-zoom.min.js"></script>
+  <script src="js/DModal.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>
