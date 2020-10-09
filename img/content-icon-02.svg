@@ -1,0 +1,18 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M36 45V47C36 47.552 36.448 48 37 48H42C42.552 48 43 47.552 43 47V43" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M29 44H17C15.343 44 14 42.657 14 41V38.414C14 37.509 14.36 36.64 15 36V35L12 34.344C11.448 34.344 11 33.896 11 33.344V32C11 31.448 11.448 31 12 31H16C16.334 31 19.031 34 21 34H29H37C38.969 34 41.666 31 42 31H46C46.552 31 47 31.448 47 32V33.344C47 33.896 46.552 34.344 46 34.344L43 35V36C43.64 36.64 44 37.509 44 38.414V41C44 42.657 42.657 44 41 44H29Z" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M40 32L38.684 28.051C38.276 26.826 37.129 26 35.838 26H29H22.162C20.871 26 19.724 26.826 19.316 28.051L18 32" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M24 41H29H34" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M22 45V47C22 47.552 21.552 48 21 48H16C15.448 48 15 47.552 15 47V43" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M40.587 36.3799C39.358 37.4219 37.795 37.9999 36.171 37.9999H35" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M17.4131 36.3799C18.6421 37.4219 20.2051 37.9999 21.8291 37.9999H23.0001" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M12 39H5C3.896 39 3 38.104 3 37V12H42V28" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M8 4H5C3.896 4 3 4.896 3 6V12H42V6C42 4.896 41.104 4 40 4H37" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M31 4H14" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M14 2H8V7H14V2Z" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M37 2H31V7H37V2Z" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M15 17H8V22H15V17Z" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M8 32V26H15V29" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M26 17H19V22H26V17Z" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M37 17H30V22H37V17Z" stroke="#FFCE00" stroke-width="2" stroke-miterlimit="10"/>
+</svg>
