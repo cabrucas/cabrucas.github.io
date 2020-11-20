@@ -1,1273 +1,268 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
+  <title>Positano Group LTd</title>
 
-
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <link rel="stylesheet" href="css/locomotive-scroll.css">
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="/css/media.css">
+  <link rel="stylesheet" href="css/media.css">
 
-  <title></title>
 </head>
 
 <body>
-
   <main class="main">
-    <header class="header">
-      <div class="header__upper-row">
-        <div class="container container--flex-row">
-          <button class="header__burger">
-            <span class="header__burger-stripe"></span>
-            <span class="header__burger-text">Меню</span>
-          </button>
-          <a href="#" class="mob-logo-link mob-logo-link--big">
-            <object data="img/mob-logo.svg" type="image/svg+xml" class="mob-logo"></object>
-          </a>
-          <div class="mob-logo-link">
-            <object data="img/mob-ren.svg" type="image/svg+xml" class="mob-logo mob-logo--ren"></object>
-          </div>
-          <ul class="header__upper-menu">
-            <li class="header__upper-menu-item header__upper-menu-item--submenu-handler">
-              <a href="#" class="header__upper-menu-link header__upper-menu-link--submenu-header">Компания</a>
-              <div class="header__upper-submenu-wrapper">
-                <ul class="header__upper-submenu">
-                  <li class="header__upper-submenu-item"><a href="#" class="header__upper-submenu-link">Информация о компании</a></li>
-                  <li class="header__upper-submenu-item"><a href="#" class="header__upper-submenu-link">Вакансии</a></li>
-                  <li class="header__upper-submenu-item"><a href="#" class="header__upper-submenu-link">Бонусная программа</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="header__upper-menu-item"><a href="#" class="header__upper-menu-link">Дилер года</a></li>
-            <li class="header__upper-menu-item header__upper-menu-item--submenu-handler">
-              <a href="#" class="header__upper-menu-link header__upper-menu-link--submenu-header">Корпоративным клиентам</a>
-              <div class="header__upper-submenu-wrapper">
-                <ul class="header__upper-submenu">
-                  <li class="header__upper-submenu-item"><a href="#" class="header__upper-submenu-link">О корпоративном сервисе</a></li>
-                  <li class="header__upper-submenu-item"><a href="#" class="header__upper-submenu-link">Renault leasing</a></li>
-                  <li class="header__upper-submenu-item"><a href="#" class="header__upper-submenu-link">Renault Business</a></li>
-                  <li class="header__upper-submenu-item"><a href="#" class="header__upper-submenu-link">Специальные предложения</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="header__upper-menu-item"><a href="#" class="header__upper-menu-link">Trade-In</a></li>
-            <li class="header__upper-menu-item"><a href="#" class="header__upper-menu-link">Аксессуары</a></li>
-          </ul>
-          <ul class="header__upper-menu header__upper-menu--right">
-            <li class="header__upper-menu-item header__upper-menu-item--with-icon">
-              <object data="img/upper-menu-sprite.svg#renault" type="image/svg+xml" class="header__upper-menu-icon"></object>
-              <a href="#" class="header__upper-menu-link">My Renault</a>
-            </li>
-            <li class="header__upper-menu-item header__upper-menu-item--with-icon">
-              <object data="img/upper-menu-sprite.svg#flag" type="image/svg+xml" class="header__upper-menu-icon"></object>
-              <a href="#" class="header__upper-menu-link">Renault Россия</a>
-            </li>
-            <li class="header__upper-menu-item header__upper-menu-item--with-icon">
-              <object data="img/upper-menu-sprite.svg#mail" type="image/svg+xml" class="header__upper-menu-icon"></object>
-              <a href="#" class="header__upper-menu-link">Написать нам</a>
-            </li>
-          </ul>
+
+    <div class="main__layer" data-scroll-container>
+      <section data-scroll-section class="hero">
+        <div class="hero__video">
+          <video autoplay="true" muted loop="loop" class="hero__video-stream">
+            <source src="./video/1057928368-hd.webm" type="video/webm">
+            <source src="./video/1057928368-hd.mp4" type="video/mp4">
+            Your browser doesn't support HTML5 video tag.
+          </video>
+          <div class="hero__video-darkener"></div>
         </div>
-      </div>
-      <div class="header__middle-row">
-        <div class="container">
-          <div class="header__middle-row-wrapper">
-            <div class="header__middle-row-inner">
-              <a href="#" class="header__main-logo-link">
-                <object data="img/svg-min/LOGO_RTDS.svg" type="image/svg+xml" class="header__main-logo"></object>
-              </a>
-            </div>
-            <div class="header__middle-row-inner header__middle-row-inner--menu">
-              <ul class="header__middle-menu">
-                <li class="header__middle-menu-item">Дилерские центры:</li>
-                <li class="header__middle-menu-item">
-                  <a href="#" class="header__middle-menu-link">Обручева</a>
-                  <div class="header__middle-menu-dropper">
-                    <div class="header__middle-menu-dropper-row">
-                      <p class="header__middle-dropper-title">Адрес</p>
-                      <p class="header__middle-dropper-text">117393, Москва, ул. Обручева, д. 52, стр. 69</p>
-                    </div>
-                    <div class="header__middle-menu-dropper-row">
-                      <p class="header__middle-dropper-title">Телефон</p>
-                      <p class="header__middle-dropper-text--phone-block">
-                        <a href="tel:84957186677" class="header__middle-dropper-text--link">+7 (495) 718-66-77</a>
-                        <span class="header__middle-dropper-button-wrapper">
-
-                          <a href="" class="btn-solid-icon ">
-                            <span class="btn-solid-icon__text ">Заказать звонок</span>
-                            <img src="img/svg-min/btn-phone-icon.svg" alt="Заказать звонок" class="btn-solid-icon__icon">
-                          </a>
-
-                        </span>
-                      </p>
-                    </div>
-                    <div class="header__middle-menu-dropper-row">
-                      <p class="header__middle-dropper-title">Время работы</p>
-                      <p class="header__middle-dropper-text">
-                        <span class="header__middle-dropper-text--content-item">Автосалон:
-                          <span class="header__middle-dropper-text--content-item-text">ежедневно с 9.00 до 21.00</span>
-                        </span>
-                        <span class="header__middle-dropper-text--content-item">Магазин запчастей:
-                          <span class="header__middle-dropper-text--content-item-text">ежедневно с 8.30 до 20.00</span>
-                        </span>
-                        <span class="header__middle-dropper-text--content-item">Отдел автокосметики:
-                          <span class="header__middle-dropper-text--content-item-text">понедельник-пятница с 10.00 до 19.00</span>
-                        </span>
-                        <span class="header__middle-dropper-text--content-item">Сервис:
-                          <span class="header__middle-dropper-text--content-item-text">ежедневно с 8.00 до 21.00</span>
-                        </span>
-                      </p>
-                    </div>
-                    <div class="header__middle-dropper-row">
-
-                      <a href="" class="btn-solid ">
-                        <span class="btn-solid__text">Подробнее</span>
-                      </a>
-
-                    </div>
-                  </div>
-                </li>
-                <li class="header__middle-menu-item">
-                  <a href="#" class="header__middle-menu-link">МКАД</a>
-                </li>
-                <li class="header__middle-menu-item">
-                  <a href="#" class="header__middle-menu-link">Тамбов</a>
-                </li>
-                <li class="header__middle-menu-item">
-                  <a href="#" class="header__middle-menu-link">Чехов</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="header__middle-row-inner">
-              <object data="img/svg-min/LOGORenault.svg" type="image/svg+xml" class="header__sec-logo"></object>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header__nav-row">
-        <div class="container container--parentheight">
-          <nav class="header__menu header__menu--no-border">
-            <ul class="header__menu-list">
-              <li class="header__menu-item">
-                <span class="header__menu-item-handler header__menu-item-handler--submenu">
-                  <a href="#" class="header__menu-link header__menu-link--submenu-handler">Новые автомобили</a>
-                </span>
-                <div class="header__menu-dropper js-tab-parent">
-                  <div class="header__menu-dropper-inner">
-                    <div class="header__menu-dropper-column">
-                      <p class="header__menu-tab js-tab" data-tab="#new-cars"><span class="header__menu-tab-text">Новые автомобили</span></p>
-                      <p class="header__menu-tab js-tab" data-tab="#commercial"><span class="header__menu-tab-text">Коммерческий транспорт</span></p>
-                    </div>
-                    <div class="header__menu-dropper-column header__menu-dropper-column--grow">
-                      <div class="header__menu-tab-wrapper">
-                        <div class="header__menu-dropper-row js-tab-item" id="new-cars">
-                          <div class="header__car-wrapper">
-
-                            <a href="#" class="header__car">
-                              <picture class="header__car-image">
-                                <source srcset="img/car-09.webp" type="image/webp">
-                                <img src="img/car-09.jpg" alt="Renault ARKANA">
-                              </picture>
-                              <p class="header__car-text">ARKANA</p>
-                            </a>
-
-                          </div>
-                          <div class="header__car-wrapper">
-
-                            <a href="#" class="header__car">
-                              <picture class="header__car-image">
-                                <source srcset="img/car-08.webp" type="image/webp">
-                                <img src="img/car-08.jpg" alt="Renault Новый KAPTUR">
-                              </picture>
-                              <p class="header__car-text">Новый KAPTUR</p>
-                            </a>
-
-                          </div>
-                          <div class="header__car-wrapper">
-
-                            <a href="#" class="header__car">
-                              <picture class="header__car-image">
-                                <source srcset="img/car-07.webp" type="image/webp">
-                                <img src="img/car-07.jpg" alt="Renault KAPTUR">
-                              </picture>
-                              <p class="header__car-text">KAPTUR</p>
-                            </a>
-
-                          </div>
-                          <div class="header__car-wrapper">
-
-                            <a href="#" class="header__car">
-                              <picture class="header__car-image">
-                                <source srcset="img/car-06.webp" type="image/webp">
-                                <img src="img/car-06.jpg" alt="Renault LOGAN">
-                              </picture>
-                              <p class="header__car-text">LOGAN</p>
-                            </a>
-
-                          </div>
-                          <div class="header__car-wrapper">
-
-                            <a href="#" class="header__car">
-                              <picture class="header__car-image">
-                                <source srcset="img/car-05.webp" type="image/webp">
-                                <img src="img/car-05.jpg" alt="Renault KOLEOS">
-                              </picture>
-                              <p class="header__car-text">KOLEOS</p>
-                            </a>
-
-                          </div>
-                          <div class="header__car-wrapper">
-
-                            <a href="#" class="header__car">
-                              <picture class="header__car-image">
-                                <source srcset="img/car-04.webp" type="image/webp">
-                                <img src="img/car-04.jpg" alt="Renault DUSTER">
-                              </picture>
-                              <p class="header__car-text">DUSTER</p>
-                            </a>
-
-                          </div>
-                          <div class="header__car-wrapper">
-
-                            <a href="#" class="header__car">
-                              <picture class="header__car-image">
-                                <source srcset="img/car-03.webp" type="image/webp">
-                                <img src="img/car-03.jpg" alt="Renault SANDERO Stepway">
-                              </picture>
-                              <p class="header__car-text">SANDERO Stepway</p>
-                            </a>
-
-                          </div>
-                          <div class="header__car-wrapper">
-
-                            <a href="#" class="header__car">
-                              <picture class="header__car-image">
-                                <source srcset="img/car-02.webp" type="image/webp">
-                                <img src="img/car-02.jpg" alt="Renault SANDERO">
-                              </picture>
-                              <p class="header__car-text">SANDERO</p>
-                            </a>
-
-                          </div>
-                          <div class="header__car-wrapper">
-
-                            <a href="#" class="header__car">
-                              <picture class="header__car-image">
-                                <source srcset="img/car-01.webp" type="image/webp">
-                                <img src="img/car-01.jpg" alt="Renault LOGAN Stepway">
-                              </picture>
-                              <p class="header__car-text">LOGAN Stepway</p>
-                            </a>
-
-                          </div>
-                        </div>
-                        <div class="header__menu-dropper-row js-tab-item" id="commercial">
-                          <div class="header__car-wrapper">
-
-                            <a href="#" class="header__car">
-                              <picture class="header__car-image">
-                                <source srcset="img/car-09.webp" type="image/webp">
-                                <img src="img/car-09.jpg" alt="Renault ARKANA Коммерческий">
-                              </picture>
-                              <p class="header__car-text">ARKANA Коммерческий</p>
-                            </a>
-
-                          </div>
-                          <div class="header__car-wrapper">
-
-                            <a href="#" class="header__car">
-                              <picture class="header__car-image">
-                                <source srcset="img/car-08.webp" type="image/webp">
-                                <img src="img/car-08.jpg" alt="Renault Новый KAPTUR">
-                              </picture>
-                              <p class="header__car-text">Новый KAPTUR</p>
-                            </a>
-
-                          </div>
-                          <div class="header__car-wrapper">
-
-                            <a href="#" class="header__car">
-                              <picture class="header__car-image">
-                                <source srcset="img/car-07.webp" type="image/webp">
-                                <img src="img/car-07.jpg" alt="Renault KAPTUR">
-                              </picture>
-                              <p class="header__car-text">KAPTUR</p>
-                            </a>
-
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="header__menu-item">
-                <span class="header__menu-item-handler">
-                  <a href="#" class="header__menu-link">Автомобили в наличии</a>
-                </span>
-              </li>
-              <li class="header__menu-item">
-                <span class="header__menu-item-handler">
-                  <a href="#" class="header__menu-link">Авто с пробегом</a>
-                </span>
-              </li>
-              <li class="header__menu-item">
-                <span class="header__menu-item-handler">
-                  <a href="#" class="header__menu-link">Сервис</a>
-                </span>
-              </li>
-              <li class="header__menu-item header__menu-item--relative">
-                <span class="header__menu-item-handler header__menu-item-handler--submenu">
-                  <a href="#" class="header__menu-link  header__menu-link--submenu-handler">Кредит и страхование</a>
-                </span>
-                <div class="header__dropper-links-list">
-                  <ul class="header__submenu-links-list">
-                    <li class="header__submenu-link-item">
-                      <a href="#" class="header__submenu-link">Заявка на расчет кредита</a>
-                    </li>
-                    <li class="header__submenu-link-item">
-                      <a href="#" class="header__submenu-link">Кредитные программы</a>
-                    </li>
-                    <li class="header__submenu-link-item">
-                      <a href="#" class="header__submenu-link">Страхование авто</a>
-                    </li>
-                    <li class="header__submenu-link-item">
-                      <a href="#" class="header__submenu-link">Другие виды страхования</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="header__menu-item">
-                <span class="header__menu-item-handler">
-                  <a href="#" class="header__menu-link">Запчасти и аксессуары</a>
-                </span>
-              </li>
-              <li class="header__menu-item">
-                <span class="header__menu-item-handler">
-                  <a href="#" class="header__menu-link">Акции</a>
-                </span>
-              </li>
-              <li class="header__menu-item">
-                <span class="header__menu-item-handler">
-                  <a href="#" class="header__menu-link">Новости</a>
-                </span>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <section class="main-slider">
-      <div class="swiper-container main-slider__container">
-        <div class="swiper-wrapper main-slider__wrapper">
-          <div class="swiper-slide main-slider__slide">
-            <picture class="main-slider__image">
-              <source srcset="img/main-slider-image.webp" media="(min-width: 768px)" type="image/webp">
-              <source srcset="img/mob-image.webp" media="(max-width: 767px)" type="image/webp">
-              <img src="img/main-slider-image.jpg" alt="Новый Рено Логан">
-            </picture>
-            <div class="container">
-              <div class="main-slider__informer-wrapper">
-                <div class="main-slider__informer">
-                  <div class="main-slider__informer-title">Выгода до 3 000 рублей</div>
-                  <p class="main-slider__informer-text">С 18 мая по 31 июля 2020 года для владельцев Renault старше 3-х лет</p>
-
-                  <a href="" class="btn-solid btn-solid--bright btn-solid--fullwidth">
-                    <span class="btn-solid__text btn-solid__text--black btn-solid--fullwidth">Подробнее</span>
-                  </a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide main-slider__slide">
-            <picture class="main-slider__image">
-              <source srcset="img/main-slider-image.webp" media="(min-width: 768px)" type="image/webp">
-              <source srcset="img/mob-image.webp" media="(max-width: 767px)" type="image/webp">
-              <img src="img/main-slider-image.jpg" alt="Новый Рено Логан">
-            </picture>
-            <div class="container">
-              <div class="main-slider__informer-wrapper">
-                <div class="main-slider__informer">
-                  <div class="main-slider__informer-title">Выгода до 5 000 рублей</div>
-                  <p class="main-slider__informer-text">С 18 мая по 31 июля 2020 года для владельцев Renault старше 3-х лет</p>
-
-                  <a href="" class="btn-solid btn-solid--bright btn-solid--fullwidth">
-                    <span class="btn-solid__text btn-solid__text--black btn-solid--fullwidth">Подробнее</span>
-                  </a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination main-slider__pagination"></div>
-        <div class="swiper-button-next main-slider__next">
-          <svg class="main-slider__arrow-container" width="77" height="80" viewBox="0 0 77 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="main-slider__arrow-white" d="M1 24.4C7.03788 10.6259 20.8272 1 36.8721 1C58.4818 1 76 18.4609 76 40C76 61.5391 58.4818 79 36.8721 79C20.8272 79 7.03788 69.3741 1 55.6" stroke-width="2" />
-          </svg>
-          <svg class="main-slider__arrow-container" width="77" height="80" viewBox="0 0 77 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="main-slider__arrow-yellow" d="M1 24.4C7.03788 10.6259 20.8272 1 36.8721 1C58.4818 1 76 18.4609 76 40C76 61.5391 58.4818 79 36.8721 79C20.8272 79 7.03788 69.3741 1 55.6" stroke-width="2" />
-          </svg>
-          <object data="img/arrow-next.svg" type="image/svg+xml" class="main-slider__next-arrow-sign"></object>
-          <p class="main-slider__next-text">cледующий</p>
-        </div>
-      </div>
-    </section>
-    <section class="models js-cartabs-parent">
-      <div class="container">
-        <h2 class="models__title">Модельный ряд Renault</h2>
-        <div class="models__row">
-          <div class="models__row-scrollr">
-            <div class="models__row-wrapper">
-              <button class="models__chapter js-chapter-btn" data-tab="#sedan-vessels">Легковые и кроссоверы</button>
-              <button class="models__chapter js-chapter-btn" data-tab="#commercial-vessels">Коммерческий транспорт</button>
-            </div>
-          </div>
-        </div>
-        <div class="models-row">
-          <div class="models__tab-content js-tab-typecontent" id="sedan-vessels">
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-01.webp" type="image/webp">
-                  <img src="img/cartab-01.png" alt="ARKANA">
-                </picture>
-                <p class="car-tab__title">ARKANA</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
+        <div class="container container--fullheight">
+          <div class="nav js-hide">
+            <a href="index.html" class="logo">
+              <img src="img/svg-min/logo.svg" alt="Positano Group LTD" class="logo__image">
             </a>
-
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-02.webp" type="image/webp">
-                  <img src="img/cartab-02.png" alt="Новый KAPTUR">
-                </picture>
-                <p class="car-tab__title">Новый KAPTUR</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-03.webp" type="image/webp">
-                  <img src="img/cartab-03.png" alt="KAPTUR">
-                </picture>
-                <p class="car-tab__title">KAPTUR</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-04.webp" type="image/webp">
-                  <img src="img/cartab-04.png" alt="KOLEOS">
-                </picture>
-                <p class="car-tab__title">KOLEOS</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-05.webp" type="image/webp">
-                  <img src="img/cartab-05.png" alt="DUSTER">
-                </picture>
-                <p class="car-tab__title">DUSTER</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-06.webp" type="image/webp">
-                  <img src="img/cartab-06.png" alt="SANDERO Stepway">
-                </picture>
-                <p class="car-tab__title">SANDERO Stepway</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-07.webp" type="image/webp">
-                  <img src="img/cartab-07.png" alt="SANDERO">
-                </picture>
-                <p class="car-tab__title">SANDERO</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-08.webp" type="image/webp">
-                  <img src="img/cartab-08.png" alt="LOGAN Stepway">
-                </picture>
-                <p class="car-tab__title">LOGAN Stepway</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-09.webp" type="image/webp">
-                  <img src="img/cartab-09.png" alt="LOGAN">
-                </picture>
-                <p class="car-tab__title">LOGAN</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <div class="models__buttons-wrapper">
-              <div class="models__button-wrapper">
-
-                <a href="" class="btn-solid btn-solid--bright ">
-                  <span class="btn-solid__text btn-solid__text--black ">Все модели</span>
-                </a>
-
-              </div>
-              <div class="models__button-wrapper">
-
-                <a href="" class="btn-solid ">
-                  <span class="btn-solid__text">Автомобили в наличии</span>
-                </a>
-
-              </div>
-            </div>
-          </div>
-          <div class="models__tab-content js-tab-typecontent" id="commercial-vessels">
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-01.webp" type="image/webp">
-                  <img src="img/cartab-01.png" alt="ARKANA">
-                </picture>
-                <p class="car-tab__title">ARKANA</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-02.webp" type="image/webp">
-                  <img src="img/cartab-02.png" alt="Новый KAPTUR">
-                </picture>
-                <p class="car-tab__title">Новый KAPTUR</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-03.webp" type="image/webp">
-                  <img src="img/cartab-03.png" alt="KAPTUR">
-                </picture>
-                <p class="car-tab__title">KAPTUR</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-04.webp" type="image/webp">
-                  <img src="img/cartab-04.png" alt="KOLEOS">
-                </picture>
-                <p class="car-tab__title">KOLEOS</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-05.webp" type="image/webp">
-                  <img src="img/cartab-05.png" alt="DUSTER">
-                </picture>
-                <p class="car-tab__title">DUSTER</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-06.webp" type="image/webp">
-                  <img src="img/cartab-06.png" alt="SANDERO Stepway">
-                </picture>
-                <p class="car-tab__title">SANDERO Stepway</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="car-tab">
-              <div class="car-tab__inner-wrapper">
-                <picture class="car-tab__image">
-                  <source srcset="img/cartab-07.webp" type="image/webp">
-                  <img src="img/cartab-07.png" alt="SANDERO">
-                </picture>
-                <p class="car-tab__title">SANDERO</p>
-                <p class="car-tab__label">Цена от, руб:
-                  <span class="car-tab__label--price">1 000 089</span>
-                </p>
-                <div class="car-tab__more">
-                  <div class="car-tab__more-inner">
-                    <img src="img/arrow-tab-more.svg" alt="стрелка" class="car-tab__more-arrow">
-                    <p class="car-tab__more-text">Узнать больше</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <div class="models__buttons-wrapper">
-              <div class="models__button-wrapper">
-
-                <a href="" class="btn-solid btn-solid--bright ">
-                  <span class="btn-solid__text btn-solid__text--black ">Все модели</span>
-                </a>
-
-              </div>
-              <div class="models__button-wrapper">
-
-                <a href="" class="btn-solid ">
-                  <span class="btn-solid__text">Автомобили в наличии</span>
-                </a>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="offers js-offers-parent">
-      <div class="container">
-        <h2 class="offers__title">Специальные предложения</h2>
-        <div class="offers__row">
-          <div class="offers__row-scrollr">
-            <div class="offers__wrapper">
-              <button class="offers__chapter js-offer-tab" data-tab="#new">Акции на новые автомобили</button>
-              <button class="offers__chapter js-offer-tab" data-tab="#service">Акции сервиса</button>
-              <button class="offers__chapter js-offer-tab" data-tab="#all">Все акции</button>
-            </div>
-          </div>
-        </div>
-        <div class="offers__row">
-          <div class="offers__tab-content js-offer-tabcontent" id="new">
-            <div class="swiper-container offers__slider">
-              <div href="#" class="swiper-wrapper offers__slider-wrapper">
-
-                <div class="swiper-slide offers__slide">
-                  <a href="#" class="offers__slide-inner">
-                    <span class="offers__slide-wrapper">
-                      <picture class="offers__slide-image">
-                        <source srcset="img/offer-01.webp" type="image/webp">
-                        <img src="img/offer-01.jpg" alt="Выгода до 30 000 рублей">
-                      </picture>
-                      <div class="offers__slide-informer-wrapper">
-                        <div class="offers__slide-informer">
-                          <p class="offers__slide-title">Выгода до 30 000 рублей</p>
-                          <div class="offers__slide-annotation">на Renault DUSTER при заказе в онлайн-шоуруме</div>
-                        </div>
-                      </div>
-                    </span>
-                  </a>
-                </div>
-
-
-                <div class="swiper-slide offers__slide">
-                  <a href="#" class="offers__slide-inner">
-                    <span class="offers__slide-wrapper">
-                      <picture class="offers__slide-image">
-                        <source srcset="img/offer-02.webp" type="image/webp">
-                        <img src="img/offer-02.jpg" alt="Выгода до 10%">
-                      </picture>
-                      <div class="offers__slide-informer-wrapper">
-                        <div class="offers__slide-informer">
-                          <p class="offers__slide-title">Выгода до 10%</p>
-                          <div class="offers__slide-annotation">по государственным программам</div>
-                        </div>
-                      </div>
-                    </span>
-                  </a>
-                </div>
-
-
-                <div class="swiper-slide offers__slide">
-                  <a href="#" class="offers__slide-inner">
-                    <span class="offers__slide-wrapper">
-                      <picture class="offers__slide-image">
-                        <source srcset="img/offer-03.webp" type="image/webp">
-                        <img src="img/offer-03.jpg" alt="Выгода до 30 000 рублей">
-                      </picture>
-                      <div class="offers__slide-informer-wrapper">
-                        <div class="offers__slide-informer">
-                          <p class="offers__slide-title">Выгода до 30 000 рублей</p>
-                          <div class="offers__slide-annotation">на Renault KAPTUR при заказе в онлайн-шоуруме</div>
-                        </div>
-                      </div>
-                    </span>
-                  </a>
-                </div>
-
-              </div>
-              <div class="offers__slider-navigation">
-                <div class="swiper-button-prev offers__slider-prev-button"></div>
-                <div class="offers__button-wrapper">
-
-                  <a href="" class="btn-solid btn-solid--bright ">
-                    <span class="btn-solid__text btn-solid__text--black ">Все предложения</span>
-                  </a>
-
-                </div>
-                <div class="swiper-button-next offers__slider-next-button"></div>
-              </div>
-            </div>
-          </div>
-          <div class="offers__tab-content js-offer-tabcontent" id="service">
-            <div class="swiper-container offers__slider">
-              <div href="#" class="swiper-wrapper offers__slider-wrapper">
-
-                <div class="swiper-slide offers__slide">
-                  <a href="#" class="offers__slide-inner">
-                    <span class="offers__slide-wrapper">
-                      <picture class="offers__slide-image">
-                        <source srcset="img/offer-01.webp" type="image/webp">
-                        <img src="img/offer-01.jpg" alt="Акция сервиса">
-                      </picture>
-                      <div class="offers__slide-informer-wrapper">
-                        <div class="offers__slide-informer">
-                          <p class="offers__slide-title">Акция сервиса</p>
-                          <div class="offers__slide-annotation">на Renault DUSTER при заказе в онлайн-шоуруме</div>
-                        </div>
-                      </div>
-                    </span>
-                  </a>
-                </div>
-
-
-                <div class="swiper-slide offers__slide">
-                  <a href="#" class="offers__slide-inner">
-                    <span class="offers__slide-wrapper">
-                      <picture class="offers__slide-image">
-                        <source srcset="img/offer-02.webp" type="image/webp">
-                        <img src="img/offer-02.jpg" alt="Выгода до 10%">
-                      </picture>
-                      <div class="offers__slide-informer-wrapper">
-                        <div class="offers__slide-informer">
-                          <p class="offers__slide-title">Выгода до 10%</p>
-                          <div class="offers__slide-annotation">по государственным программам</div>
-                        </div>
-                      </div>
-                    </span>
-                  </a>
-                </div>
-
-
-                <div class="swiper-slide offers__slide">
-                  <a href="#" class="offers__slide-inner">
-                    <span class="offers__slide-wrapper">
-                      <picture class="offers__slide-image">
-                        <source srcset="img/offer-03.webp" type="image/webp">
-                        <img src="img/offer-03.jpg" alt="Выгода до 30 000 рублей">
-                      </picture>
-                      <div class="offers__slide-informer-wrapper">
-                        <div class="offers__slide-informer">
-                          <p class="offers__slide-title">Выгода до 30 000 рублей</p>
-                          <div class="offers__slide-annotation">на Renault KAPTUR при заказе в онлайн-шоуруме</div>
-                        </div>
-                      </div>
-                    </span>
-                  </a>
-                </div>
-
-              </div>
-              <div class="offers__slider-navigation">
-                <div class="swiper-button-prev offers__slider-prev-button"></div>
-                <div class="offers__button-wrapper">
-
-                  <a href="" class="btn-solid btn-solid--bright ">
-                    <span class="btn-solid__text btn-solid__text--black ">Все предложения</span>
-                  </a>
-
-                </div>
-                <div class="swiper-button-next offers__slider-next-button"></div>
-              </div>
-            </div>
-          </div>
-          <div class="offers__tab-content js-offer-tabcontent" id="all">
-            <div class="swiper-container offers__slider">
-              <div href="#" class="swiper-wrapper offers__slider-wrapper">
-
-                <div class="swiper-slide offers__slide">
-                  <a href="#" class="offers__slide-inner">
-                    <span class="offers__slide-wrapper">
-                      <picture class="offers__slide-image">
-                        <source srcset="img/offer-01.webp" type="image/webp">
-                        <img src="img/offer-01.jpg" alt="Все акции">
-                      </picture>
-                      <div class="offers__slide-informer-wrapper">
-                        <div class="offers__slide-informer">
-                          <p class="offers__slide-title">Все акции</p>
-                          <div class="offers__slide-annotation">на Renault DUSTER при заказе в онлайн-шоуруме</div>
-                        </div>
-                      </div>
-                    </span>
-                  </a>
-                </div>
-
-
-                <div class="swiper-slide offers__slide">
-                  <a href="#" class="offers__slide-inner">
-                    <span class="offers__slide-wrapper">
-                      <picture class="offers__slide-image">
-                        <source srcset="img/offer-02.webp" type="image/webp">
-                        <img src="img/offer-02.jpg" alt="Выгода до 10%">
-                      </picture>
-                      <div class="offers__slide-informer-wrapper">
-                        <div class="offers__slide-informer">
-                          <p class="offers__slide-title">Выгода до 10%</p>
-                          <div class="offers__slide-annotation">по государственным программам</div>
-                        </div>
-                      </div>
-                    </span>
-                  </a>
-                </div>
-
-
-                <div class="swiper-slide offers__slide">
-                  <a href="#" class="offers__slide-inner">
-                    <span class="offers__slide-wrapper">
-                      <picture class="offers__slide-image">
-                        <source srcset="img/offer-03.webp" type="image/webp">
-                        <img src="img/offer-03.jpg" alt="Выгода до 30 000 рублей">
-                      </picture>
-                      <div class="offers__slide-informer-wrapper">
-                        <div class="offers__slide-informer">
-                          <p class="offers__slide-title">Выгода до 30 000 рублей</p>
-                          <div class="offers__slide-annotation">на Renault KAPTUR при заказе в онлайн-шоуруме</div>
-                        </div>
-                      </div>
-                    </span>
-                  </a>
-                </div>
-
-              </div>
-              <div class="offers__slider-navigation">
-                <div class="swiper-button-prev offers__slider-prev-button"></div>
-                <div class="offers__button-wrapper">
-
-                  <a href="" class="btn-solid btn-solid--bright ">
-                    <span class="btn-solid__text btn-solid__text--black ">Все предложения</span>
-                  </a>
-
-                </div>
-                <div class="swiper-button-next offers__slider-next-button"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="news">
-      <div class="container">
-        <h2 class="news__title">Новости</h2>
-        <div class="news__set">
-
-          <div class="new-card">
-            <a href="#" class="new-card__link">
-              <div class="new-card__inner">
-                <picture class="new-card__image">
-                  <source srcset="img/new-01.webp" type="image/webp">
-                  <img src="img/new-01.jpg" alt="Новый Renault KAPTUR: идеальный кроссовер для города и не только">
-                </picture>
-                <div class="new-card__info">
-                  <p class="new-card__title">Новый Renault KAPTUR: идеальный кроссовер для города и не только</p>
-                  <p class="new-card__text">Обновленный экстерьер и полностью измененный интерьер с материалами и эргономикой на новом уровне.</p>
-                  <p class="new-card__date">21 мая, 2020</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-
-          <div class="new-card">
-            <a href="#" class="new-card__link">
-              <div class="new-card__inner">
-                <picture class="new-card__image">
-                  <source srcset="img/new-02.webp" type="image/webp">
-                  <img src="img/new-02.jpg" alt="Выгода до 140 000 рублей на Renault Duster">
-                </picture>
-                <div class="new-card__info">
-                  <p class="new-card__title">Выгода до 140 000 рублей на Renault Duster</p>
-                  <p class="new-card__text">Выгода по программе трейд-ин до 110 000 рублей и дополнительная выгода 30 000 рублей при покупке в онлайн-шоуруме!</p>
-                  <p class="new-card__date">21 мая, 2020</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-
-          <div class="new-card">
-            <a href="#" class="new-card__link">
-              <div class="new-card__inner">
-                <picture class="new-card__image">
-                  <source srcset="img/new-03.webp" type="image/webp">
-                  <img src="img/new-03.jpg" alt="Новый Renault KAPTUR: идеальный кроссовер для города и не только">
-                </picture>
-                <div class="new-card__info">
-                  <p class="new-card__title">Новый Renault KAPTUR: идеальный кроссовер для города и не только</p>
-                  <p class="new-card__text">Обновленный экстерьер и полностью измененный интерьер с материалами и эргономикой на новом уровне.</p>
-                  <p class="new-card__date">21 мая, 2020</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="news__button-wrapper">
-
-            <a href="" class="btn-solid btn-solid--bright ">
-              <span class="btn-solid__text btn-solid__text--black ">Все новости</span>
-            </a>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="footer__row footer__row--dark">
-        <div class="container">
-          <div class="footer__adress-set">
-
-            <div class="adress">
-              <p class="adress__title">г. Москва, ул. Обручева:</p>
-              <a href="tel:+7 (495) 718-66-77" class="adress__phone">+7 (495) 718-66-77</a>
-              <p class="adress__schedule">
-                <span>отдел продаж: ежедневно с 9.00 до 21.00</span>
-                <span>отдел сервиса: ежедневно с 8.00 до 21.00</span>
-              </p>
-              <a href="#" class="footer__more">
-                <div class="footer__more-inner">
-                  <img src="img/arrow-tab-more.svg" alt="стрелка" class="footer__more-arrow">
-                  <p class="footer__more-text">Заказать звонок</p>
-                </div>
-              </a>
-            </div>
-
-
-            <div class="adress">
-              <p class="adress__title">г. Москва, МКАД 26 км:</p>
-              <a href="tel:+7 (495) 172-01-70" class="adress__phone">+7 (495) 172-01-70</a>
-              <p class="adress__schedule">
-                <span>отдел продаж: ежедневно с 9.00 до 21.00</span>
-                <span>отдел сервиса: ежедневно с 8.00 до 21.00</span>
-              </p>
-              <a href="#" class="footer__more">
-                <div class="footer__more-inner">
-                  <img src="img/arrow-tab-more.svg" alt="стрелка" class="footer__more-arrow">
-                  <p class="footer__more-text">Заказать звонок</p>
-                </div>
-              </a>
-            </div>
-
-
-            <div class="adress">
-              <p class="adress__title">г. Тамбов:</p>
-              <a href="tel:+7 (4752) 79-00-11" class="adress__phone">+7 (4752) 79-00-11</a>
-              <p class="adress__schedule">
-                <span>отдел продаж: ежедневно с 9.00 до 21.00</span>
-                <span>отдел сервиса: ежедневно с 8.00 до 21.00</span>
-              </p>
-              <a href="#" class="footer__more">
-                <div class="footer__more-inner">
-                  <img src="img/arrow-tab-more.svg" alt="стрелка" class="footer__more-arrow">
-                  <p class="footer__more-text">Заказать звонок</p>
-                </div>
-              </a>
-            </div>
-
-
-            <div class="adress">
-              <p class="adress__title">г. Чехов:</p>
-              <a href="tel:+7 (495) 531-20-90" class="adress__phone">+7 (495) 531-20-90</a>
-              <p class="adress__schedule">
-                <span>отдел продаж: ежедневно с 9.00 до 21.00</span>
-                <span>отдел сервиса: ежедневно с 8.00 до 21.00</span>
-              </p>
-              <a href="#" class="footer__more">
-                <div class="footer__more-inner">
-                  <img src="img/arrow-tab-more.svg" alt="стрелка" class="footer__more-arrow">
-                  <p class="footer__more-text">Заказать звонок</p>
-                </div>
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="footer__row">
-        <div class="container">
-          <div class="footer__menu-set">
-            <ul class="footer__menu-block">
-              <li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Новые автомобили</a></li>
-              <li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Авто с пробегом</a></li>
-              <li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Сервис</a></li>
-              <li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Запчасти и аксессуары</a></li>
-            </ul>
-            <ul class="footer__menu-block">
-              <li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Trade-in</a></li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-item-link">Акции</a>
-                <ul class="footer__submenu">
-                  <li class="footer__submenu-item"><a href="#" class="footer__submenu-link">Акции сервиса</a></li>
-                  <li class="footer__submenu-item"><a href="#" class="footer__submenu-link">Акции на новые автомобили</a></li>
-                </ul>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-item-link">Кредит и страхование</a>
-                <ul class="footer__submenu">
-                  <li class="footer__submenu-item"><a href="#" class="footer__submenu-link">Заявка на расчет кредита</a></li>
-                  <li class="footer__submenu-item"><a href="#" class="footer__submenu-link">Кредитные программы</a></li>
-                  <li class="footer__submenu-item"><a href="#" class="footer__submenu-link">Страхование авто</a></li>
-                  <li class="footer__submenu-item"><a href="#" class="footer__submenu-link">Другие виды страхования</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="footer__menu-block">
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-item-link">Корпоративным клиентам</a>
-                <ul class="footer__submenu">
-                  <li class="footer__submenu-item"><a href="#" class="footer__submenu-link">О корпоративном сервисе</a></li>
-                  <li class="footer__submenu-item"><a href="#" class="footer__submenu-link">Renault Leasing</a></li>
-                  <li class="footer__submenu-item"><a href="#" class="footer__submenu-link">Renault Business</a></li>
-                  <li class="footer__submenu-item"><a href="#" class="footer__submenu-link">Специальные предложения</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="footer__menu-block">
-              <li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Новости</a></li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-item-link">Компания</a>
-                <ul class="footer__submenu">
-                  <li class="footer__submenu-item"><a href="#" class="footer__submenu-link">Информация о компании</a></li>
-                  <li class="footer__submenu-item"><a href="#" class="footer__submenu-link">Вакансии</a></li>
-                  <li class="footer__submenu-item"><a href="#" class="footer__submenu-link">Бонусная программа</a></li>
-                </ul>
-              </li>
-              <li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Дилер года</a></li>
-              <li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Контакты</a></li>
+            <ul class="nav__list">
+              <li class="nav__item"><a href="tel:+8613079833370" class="nav__item-link nav__phone small small--bold">+86 130 7983 3370</a></li>
+              <li class="nav__item"><a href="#" class="nav__item-link nav__cta small link">Contact Us</a></li>
             </ul>
           </div>
-        </div>
-      </div>
-      <div class="footer__row footer__row--offset-top-16">
-        <div class="container">
-          <div class="footer__wrapper">
-            <div class="socials">
-              <p class="socials__title">Мы в социальных сетях:</p>
-              <div class="socials__wrapper">
-                <a href="#" class="socials__block">
-                  <div class="socials__icon">
-                    <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="socials__icon-back" d="M0 0h40v40H0z" />
-                      <path d="M21.193 28v-7.298h2.357l.354-2.845h-2.711v-1.815c0-.824.219-1.385 1.355-1.385h1.451v-2.545A18.817 18.817 0 0021.887 12c-2.091 0-3.522 1.326-3.522 3.76v2.098H16v2.845h2.365V28h2.828z" fill="#fff" /></svg>
-                  </div>
+          <div class="hero__inner">
+            <div class="hero__info">
+              <div class="hero__info-row">
+                <h1 class="hero__title title" data-scroll data-scroll-speed="1">Radio-frequency unit</h1>
+                <h2 class="hero__subtitle subtitle" data-scroll data-scroll-speed="1">Calculation and analytical complex for radio-frequency planning performing, based on the use of advanced informational technologies and geographic information systems</h2>
+              </div>
+              <div class="hero__info-row">
+
+                <div class="benefit hero__benefit">
+                  <img src="img/sprite.svg#globe" alt="globe" class="benefit__icon">
+                  <p class="benefit__text">Work worldwide</p>
+                </div>
+
+
+                <a href="" data-open=more class="benefit benefit--link hero__benefit">
+                  <img src="img/sprite.svg#dots" alt="dots" class="benefit__icon">
+                  <p class="benefit__text">More info</p>
                 </a>
-                <a href="#" class="socials__block">
-                  <div class="socials__icon">
-                    <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="socials__icon-back" d="M0 0h40v40H0z" />
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M19.828 23.963h.956s.289-.032.437-.188c.136-.145.132-.414.132-.414s-.019-1.265.577-1.453c.586-.183 1.34 1.224 2.139 1.765.605.408 1.064.32 1.064.32l2.137-.03s1.117-.068.588-.936c-.043-.068-.309-.639-1.59-1.813-1.34-1.225-1.16-1.027.455-3.147.982-1.292 1.375-2.08 1.252-2.418-.117-.322-.84-.237-.84-.237l-2.406.015s-.178-.023-.311.054c-.129.076-.211.254-.211.254s-.381 1-.889 1.851c-1.072 1.793-1.5 1.888-1.676 1.776-.407-.26-.305-1.043-.305-1.6 0-1.738.267-2.463-.521-2.65-.261-.062-.454-.103-1.122-.11-.859-.008-1.585.002-1.997.202-.273.132-.485.426-.356.443.159.021.519.096.71.352.247.331.238 1.073.238 1.073s.142 2.047-.331 2.301c-.325.174-.77-.182-1.725-1.809-.488-.834-.858-1.755-.858-1.755s-.071-.172-.198-.264a1.004 1.004 0 00-.369-.148l-2.287.015s-.343.01-.469.157c-.112.131-.009.401-.009.401s1.79 4.13 3.816 6.21c1.859 1.91 3.969 1.783 3.969 1.783z" fill="#fff" /></svg>
-                  </div>
-                </a>
-                <a href="#" class="socials__block">
-                  <div class="socials__icon">
-                    <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="socials__icon-back" d="M0 0h40v40H0z" />
-                      <path d="M27.953 16.815c-.036-.777-.152-1.383-.379-1.965a4.074 4.074 0 00-.956-1.469 4.068 4.068 0 00-1.469-.957c-.582-.226-1.188-.343-1.965-.378C22.357 12.009 22.083 12 20 12s-2.358.009-3.185.046c-.777.036-1.383.153-1.965.379-.58.225-1.033.52-1.469.957a4.073 4.073 0 00-.957 1.468c-.226.582-.342 1.188-.378 1.965C12.008 17.642 12 17.917 12 20c0 2.084.009 2.358.046 3.185.036.777.152 1.384.378 1.965.225.58.52 1.032.957 1.469.437.437.89.731 1.469.957.582.226 1.188.343 1.965.378.827.037 1.101.046 3.185.046s2.358-.009 3.185-.047c.777-.035 1.383-.152 1.965-.378a4.09 4.09 0 001.469-.957c.437-.436.731-.889.956-1.469.227-.581.343-1.188.379-1.965.036-.826.046-1.1.046-3.184 0-2.083-.01-2.358-.047-3.185zM20 25.995c-2.046 0-2.288-.008-3.093-.045-.705-.032-1.081-.147-1.33-.244a2.063 2.063 0 01-.777-.505 2.089 2.089 0 01-.506-.778c-.097-.248-.211-.625-.244-1.329-.037-.807-.045-1.048-.045-3.094 0-2.045.008-2.288.044-3.093.032-.705.147-1.081.244-1.33.125-.32.267-.538.506-.777a2.07 2.07 0 01.777-.505c.249-.097.625-.212 1.33-.244.804-.038 1.046-.046 3.094-.046s2.29.008 3.093.044c.705.032 1.081.147 1.33.244.32.124.538.266.777.505s.381.458.506.777c.097.249.212.625.243 1.33.037.807.045 1.049.045 3.095 0 2.046-.008 2.288-.045 3.094-.031.704-.146 1.081-.243 1.329-.125.32-.267.538-.506.777a2.06 2.06 0 01-.777.506c-.249.097-.625.212-1.33.244-.806.037-1.047.045-3.093.045z" fill="#fff" />
-                      <path d="M20 15.741A4.264 4.264 0 0015.741 20 4.264 4.264 0 0020 24.259 4.264 4.264 0 0024.259 20 4.264 4.264 0 0020 15.741zm0 6.513A2.256 2.256 0 0117.747 20 2.256 2.256 0 0120 17.746 2.256 2.256 0 0122.253 20 2.257 2.257 0 0120 22.254z" fill="#fff" />
-                      <path d="M24.104 17.127a1.232 1.232 0 100-2.464 1.232 1.232 0 000 2.464z" fill="#fff" /></svg>
-                  </div>
-                </a>
-                <a href="#" class="socials__block">
-                  <div class="socials__icon">
-                    <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="socials__icon-back" d="M0 0h40v40H0z" />
-                      <path d="M20 20.258a4.133 4.133 0 004.129-4.128A4.134 4.134 0 0020 12a4.134 4.134 0 00-4.129 4.13A4.133 4.133 0 0020 20.258zm0-5.838a1.71 1.71 0 011.709 1.709A1.71 1.71 0 0120 17.838a1.711 1.711 0 01-1.709-1.709c0-.942.767-1.709 1.709-1.709zM21.67 23.627a7.728 7.728 0 002.398-.993 1.21 1.21 0 00-1.289-2.048 5.246 5.246 0 01-5.56 0 1.209 1.209 0 10-1.288 2.048 7.747 7.747 0 002.398.993l-2.309 2.309a1.21 1.21 0 101.712 1.71L20 25.376l2.27 2.27a1.207 1.207 0 001.709 0 1.204 1.204 0 000-1.71l-2.309-2.31z" fill="#fff" /></svg>
-                  </div>
-                </a>
+
               </div>
             </div>
-            <p class="footer__informer">Copyright © 2020 ЗАО "РТДС Центр".<br>RTDService — официальный дилер RENAULT</p>
           </div>
         </div>
-      </div>
-      <div class="footer-row">
-        <div class="container">
-          <p class="footer__annotation"><strong>Дилер года 2015-2016-2017-2018-2019” RENAULT в России</strong> на основании Международного дилерского рейтинга компании Renault</p>
+      </section>
+      <section data-scroll-section class="block block--black">
+        <picture class="block__decor" data-scroll data-scroll-speed="1">
+          <source srcset="img/decor.webp" type="image/webp">
+          <img src="img/decor.jpg" alt="Radio Frequency Unit" data-scroll data-scroll-speed="3">
+        </picture>
+        <div class="container container--fullheight">
+          <div class="block__inner">
+            <div class="block__info">
+              <p class="title block__title"></p>
+              <div class="block__row">
+                <p class="block__title block__title--offset-bottom title" data-scroll data-scroll-speed="2">Global market leader in EMC calculations</p>
+              </div>
+              <div class="block__row" data-scroll data-scroll-speed="1">
+
+                <div class="benefit block__benefit">
+                  <img src="img/sprite.svg#waves" alt="waves" class="benefit__icon">
+                  <p class="benefit__text">State-of-the-art equipment, powerful servers</p>
+                </div>
+
+
+                <div class="benefit block__benefit">
+                  <img src="img/sprite.svg#man" alt="man" class="benefit__icon">
+                  <p class="benefit__text">Large team of specialists</p>
+                </div>
+
+
+                <div class="benefit block__benefit">
+                  <img src="img/sprite.svg#check" alt="check" class="benefit__icon">
+                  <p class="benefit__text">Many years of experience</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
+      </section>
+      <section data-scroll-section class="block block--dark">
+        <div class="container container--fullheight">
+          <div class="block__inner">
+            <div class="block__info">
+              <p class="title block__title"></p>
+              <div class="block__row">
+                <p class="block__title block__title--offset-left title" data-scroll data-scroll-speed="2">About us</p>
+              </div>
+              <div class="block__row">
+                <p class="block__subtitle block__subtitle--offset-left subtitle" data-scroll data-scroll-speed="1">Positano Group LTD. Company was established in 2010 year. In 2015 the radio-frequency unit for planning and modeling was organized, which scientific and technological base contains:</p>
+              </div>
+              <div class="block__row" data-scroll data-scroll-speed="1">
+
+                <div class="benefit block__benefit">
+                  <img src="img/sprite.svg#user" alt="user" class="benefit__icon">
+                  <p class="benefit__text">15 highly-qualified specialists with extensive experience in radio-frequency planning and mathematical modeling</p>
+                </div>
+
+
+                <div class="benefit block__benefit">
+                  <img src="img/sprite.svg#global-connections" alt="global-connections" class="benefit__icon">
+                  <p class="benefit__text">Internally developed calculation and analytical complex for the performance of work on radio-frequency planning</p>
+                </div>
+
+
+                <div class="benefit block__benefit">
+                  <img src="img/sprite.svg#server" alt="server" class="benefit__icon">
+                  <p class="benefit__text">High-performance server space</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section class="infographics">
+        <div class="infographics__decor">
+          <picture class="infographics__decor-image" data-info="data1">
+            <source srcset="img/back-1.webp" type="image/webp">
+            <img src="img/back-1.jpg" alt="Radio frequency unit">
+          </picture>
+          <picture class="infographics__decor-image" data-info="data2">
+            <source srcset="img/back-2.webp" type="image/webp">
+            <img src="img/back-2.jpg" alt="Radio frequency unit">
+          </picture>
+          <picture class="infographics__decor-image" data-info="data3">
+            <source srcset="img/back-1.webp" type="image/webp">
+            <img src="img/back-1.jpg" alt="Radio frequency unit">
+          </picture>
+          <picture class="infographics__decor-image" data-info="data4">
+            <source srcset="img/back-2.webp" type="image/webp">
+            <img src="img/back-2.jpg" alt="Radio frequency unit">
+          </picture>
+        </div>
+        <div class="container">
+          <div class="infographics__content">
+            <div class="infographics__row" data-scroll data-scroll-speed="2">
+              <p class="infographics__title title">Calculation and analytical complex</p>
+              <p class="infographics__title-annotation">The Complex uses GISArcGIS 10 (ArcInfo, ArcView, ArcGIS Server and others). There is a digital terrain model with an initial step of 50 meters and radar interferometric imaging of the globe (SRTM-3) incorporated in the Complex. For most cities the heights of buildings and constructions are integrated into the digital elevation model. GIS integration with mathematical models is carried out using specialized development packages GIS ToolKit (“Panorama”) and ArcGIS (ArcGIS 10).</p>
+            </div>
+            <div class="infographics__row" data-scroll data-scroll-speed="1">
+              <p class="infographics__subtitle subtitle">Positano Group LTD. has a calculation and analytical complex (hereby – Complex) for radio-frequency planning performing, based on the use of advanced informational technologies and geographic information systems, that implements algorithms for calculating according to the methodological recommendations of the International Telecommunication Union (ITU-R P.525, ITU-R P.526, ITU-R P.1546, EURO-COST 231)</p>
+              <p class="infographics__title-annotation infographics__title-annotation--small">The complex is located on high-performance servers capable of processing up to 15 000 base stations of movable RES per month.</p>
+            </div>
+            <div class="infographics__row infographics__row--offset-top">
+              <svg width="1728" height="511" viewBox="0 0 1728 511" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g class="infogr">
+                  <g class="part" data-opener="data1">
+                    <circle class="outer" cx="255.5" cy="255.5" r="255" />
+                    <circle class="inner" cx="255.5" cy="255.5" r="221" fill="white" stroke="white" />
+                    <text class="num" xml:space="preserve" style="white-space: pre" font-family="Bebas Neue" font-size="32" font-weight="bold" letter-spacing="0em">
+                      <tspan x="242.812" y="264">01</tspan>
+                    </text>
+                  </g>
+                  <g class="part" data-opener="data2">
+                    <circle class="outer" cx="661.5" cy="255.5" r="255" />
+                    <circle class="inner" cx="661.5" cy="255.5" r="221" fill="white" stroke="white" />
+                    <text class="num" xml:space="preserve" style="white-space: pre" font-family="Bebas Neue" font-size="32" font-weight="bold" letter-spacing="0em">
+                      <tspan x="648.812" y="264">02</tspan>
+                    </text>
+                  </g>
+                  <g class="part" data-opener="data3">
+                    <circle class="outer" cx="1066.5" cy="255.5" r="255" />
+                    <circle class="inner" cx="1066.5" cy="255.5" r="221" fill="white" stroke="white" />
+                    <text class="num" xml:space="preserve" style="white-space: pre" font-family="Bebas Neue" font-size="32" font-weight="bold" letter-spacing="0em">
+                      <tspan x="1053.81" y="264">03</tspan>
+                    </text>
+                  </g>
+                  <g class="part" data-opener="data4">
+                    <circle class="outer" cx="1472.5" cy="255.5" r="255" stroke="white" />
+                    <circle class="inner" cx="1472.5" cy="255.5" r="221" fill="white" stroke="white" />
+                    <text class="num" xml:space="preserve" style="white-space: pre" font-family="Bebas Neue" font-size="32" font-weight="bold" letter-spacing="0em">
+                      <tspan x="1459.81" y="264">04</tspan>
+                    </text>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="infographics__row" data-scroll data-scroll-speed="1">
+              <div class="info-part" data-info="data1">
+                <p class="info-part__num">01</p>
+                <p class="info-part__text">Calculation of conditions for ensuring electromagnetic compatibility of RES-sources of interference and RES-receptors of interference. In this case developed mathematical models of RES, calculated electromagnetic environment parameters and specialized algorithms for determining electromagnetic compatibility conditions are used</p>
+              </div>
+              <div class="info-part" data-info="data2">
+                <p class="info-part__num">02</p>
+                <p class="info-part__text">Calculation of conditions for ensuring electromagnetic compatibility of RES-sources of interference and RES-receptors of interference. In this case developed mathematical models of RES, calculated electromagnetic environment parameters and specialized algorithms for determining electromagnetic compatibility conditions are used</p>
+              </div>
+              <div class="info-part" data-info="data3">
+                <p class="info-part__num">03</p>
+                <p class="info-part__text">Calculation of conditions for ensuring electromagnetic compatibility of RES-sources of interference and RES-receptors of interference. In this case developed mathematical models of RES, calculated electromagnetic environment parameters and specialized algorithms for determining electromagnetic compatibility conditions are used</p>
+              </div>
+              <div class="info-part" data-info="data4">
+                <p class="info-part__num">04</p>
+                <p class="info-part__text">Calculation of conditions for ensuring electromagnetic compatibility of RES-sources of interference and RES-receptors of interference. In this case developed mathematical models of RES, calculated electromagnetic environment parameters and specialized algorithms for determining electromagnetic compatibility conditions are used</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-scroll-section class="block block--olive">
+        <div class="container container--fullheight">
+          <div class="block__inner">
+            <div class="block__info">
+              <p class="title block__title"></p>
+              <div class="block__row">
+                <p class="block__title block__title--offset-left title" data-scroll data-scroll-speed="2">Why we?</p>
+              </div>
+              <div class="block__row block__row--vertical" data-scroll data-scroll-speed="1">
+                <p class="block__subtitle block__subtitle--offset-left subtitle">
+                  <span>Why do partners choose Positano Group LTD.</span>
+                  <span>Positano Group LTD. works without advance payment, charge for the results of performance.</span>
+                  <span><a href="#" class="link link--subtitle">Feedback and contacts</a></span>
+                </p>
+
+              </div>
+              <div class="block__row" data-scroll data-scroll-speed="1">
+
+                <div class="benefit block__benefit">
+                  <img src="img/sprite.svg#chat" alt="chat" class="benefit__icon">
+                  <p class="benefit__text">Russian-speaking specialists, able to solve the most complex problems, work for Positano Group LTD.</p>
+                </div>
+
+
+                <div class="benefit block__benefit">
+                  <img src="img/sprite.svg#check" alt="check" class="benefit__icon">
+                  <p class="benefit__text">Positano Group LTD. has extensive experience in working with service companies and divisions of communications operators involved in radio-frequency planning and electromagnetic compatibility calculations;</p>
+                </div>
+
+
+                <div class="benefit block__benefit">
+                  <img src="img/sprite.svg#radio" alt="radio" class="benefit__icon">
+                  <p class="benefit__text">Specialists of Positano Group LTD. are well familiar with Russian specifics in the field of electromagnetic compatibility calculations and cellular network planning</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
   </main>
 
-
-  <script src="js/TabMaker.js"></script>
-  <script src="js/header.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/mainpage.js"></script>
+  <script src="js/locomotive-scroll.min.js"></script>
+  <script src="js/app.js"></script>
 
 </body>
 
